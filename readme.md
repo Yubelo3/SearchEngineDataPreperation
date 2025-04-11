@@ -40,6 +40,8 @@ This `list` is sorted by page_id in ascending order.
 * "children_id": List[int], page_id for those pages pointed by this page.  
 * "parents_id": List[int], page_id for those pages point to this page.  
 * "pagerank": float, pagerank value for this page. Note that pagerank are normalized so that the summation of pr value is equal to number of pages.  
+* "size": int, html file size  
+* "freq_words": a dict that map top-5 frequent words to its frequency
 
 ### `page_data/forward_index.json`  
 This is the index that map from page to in-page words.  
