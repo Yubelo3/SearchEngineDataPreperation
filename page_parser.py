@@ -52,7 +52,8 @@ class PageParser(object):
             "title": title,
             "last_modified": last_modified,
             "links": list(links),
-            "original_page": response.text
+            "original_page": response.text,
+            "size":len(response.text)
         }
 
     def extract_title_and_body_from_html_str(self, content: str):

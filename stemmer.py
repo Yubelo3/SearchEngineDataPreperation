@@ -1,18 +1,22 @@
 from nltk.stem import PorterStemmer
 from vocabulary import Vocabulary
 import re
-import unicodedata
 import wordninja
+import math
+import unicodedata
 
 
 class Stemmer():
-    def __init__(self,stopword_file:str) -> None:
+    def __init__(self,stopword_file:str,whitelist=["crawler"]) -> None:
         self.stemmer = PorterStemmer()
         self.vocab = Vocabulary()
         self.stopwords=set()
         with open(stopword_file,"r") as f:
             for word in f.readlines():
                 self.stopwords.add(word.strip())
+        for w in whitelist:
+            wordlist_len=len(wordninja.DEFAULT_LANGUAGE_MODEL._wordcost)
+            wordninja.DEFAULT_LANGUAGE_MODEL._wordcost[w]=math.log(wordlist_len*math.log(wordlist_len))
 
     def clean_text(self, text: str) -> str:
         text=self.remove_accents(text)  # remove accent
@@ -37,8 +41,8 @@ class Stemmer():
         output = [self.vocab.map(self.stem(w)) for w in text.split(" ")]
         return output
 
-    def dictionary(self):
-        return self.vocab.dictionary()
+    def vocabulary(self):
+        return self.vocab
 
 
 if __name__=="__main__":

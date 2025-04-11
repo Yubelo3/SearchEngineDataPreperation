@@ -27,8 +27,8 @@ class Crawler(object):
             url, parent_id = queue.popleft()
             progress_bar.set_description(f"retriving {url}...")
             page = self.parser.extract_webpage(url)
-            title, last_modified, links, original_page = page["title"], page[
-                "last_modified"], page["links"], page["original_page"]
+            title, last_modified, links, original_page,size = page["title"], page[
+                "last_modified"], page["links"], page["original_page"],page["size"]
 
             page_key = (url, last_modified)
             page_id = num_crawled
@@ -42,7 +42,9 @@ class Crawler(object):
                 children_id=[],
                 parents_id=[],
                 text=original_page,
-                pagerank=-1.0
+                pagerank=-1.0,
+                size=-1,
+                freq_words={}
             ))
             num_crawled += 1
             progress_bar.update()
@@ -69,7 +71,8 @@ class Crawler(object):
             self.dump_pages(pages, dump_dir)
         return pages, page_to_id, connectivity_matrix
 
-    def dump_pages(self, pages: List[Page], dump_dir):
+    @staticmethod
+    def dump_pages(pages: List[Page], dump_dir):
         if not os.path.exists(dump_dir):
             os.mkdir(dump_dir)
         page_text_dir = os.path.join(dump_dir, "original_pages/")
@@ -86,7 +89,9 @@ class Crawler(object):
                 "links": p.links,
                 "children_id": p.children_id,
                 "parents_id": p.parents_id,
-                "pagerank": p.pagerank
+                "pagerank": p.pagerank,
+                "size":p.size,
+                "freq_words":p.freq_words
             })
             page_text_path = os.path.join(page_text_dir, f"{p.id}.html")
             with open(page_text_path, "w", encoding="utf-8") as f:
