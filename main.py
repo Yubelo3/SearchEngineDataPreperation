@@ -50,8 +50,8 @@ def stemming():
         with open(filepath, "r", encoding="utf-8") as f:
             html_content = f.read()
         title, body = parser.extract_title_and_body_from_html_str(html_content)
-        stemmed_title = stemmer.stem_and_map(title)
-        stemmed_body = stemmer.stem_and_map(body)
+        stemmed_title,stemmed_word_index_title = stemmer.stem_and_map(title)
+        stemmed_body,stemmed_word_index_body = stemmer.stem_and_map(body)
         all_words=stemmed_title+stemmed_body
         freq_counter={}
         for w in all_words:
@@ -62,7 +62,9 @@ def stemming():
         forward_index.append({
             "id": doc_id,
             "title": stemmed_title,
+            "title_word_pos": stemmed_word_index_title,
             "body": stemmed_body,
+            "body_word_pos":stemmed_word_index_body,
         })
     Crawler.dump_pages(pages,PAGE_DIR)
     forward_index.sort(key=lambda x: x["id"])
@@ -85,16 +87,17 @@ def build_inverted_index():
     title_inverted_index = [{"id": i, "doc": []} for i in range(vocab_size)]
     body_inverted_index = [{"id": i, "doc": []} for i in range(vocab_size)]
 
-    def aggregate(page_id, word_list, target_index):
-        for w in word_list:
+    def aggregate(page_id, word_list, word_pos,target_index):
+        for w,p in zip(word_list,word_pos):
             if len(target_index[w]["doc"]) > 0 and target_index[w]["doc"][-1][0] == page_id:
                 target_index[w]["doc"][-1][1] += 1
+                target_index[w]["doc"][-1][2].append(p)
             else:
-                target_index[w]["doc"].append([page_id, 1])
+                target_index[w]["doc"].append([page_id, 1, [p]])
     for page in forward_index:
         page_id = page["id"]
-        aggregate(page_id, page["title"], title_inverted_index)
-        aggregate(page_id, page["body"], body_inverted_index)
+        aggregate(page_id, page["title"],page["title_word_pos"], title_inverted_index)
+        aggregate(page_id, page["body"],page["body_word_pos"], body_inverted_index)
     title_inverted_index_path = os.path.join(
         PAGE_DIR, "title_inverted_index.json")
     body_inverted_index_path = os.path.join(

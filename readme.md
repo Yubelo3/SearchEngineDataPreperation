@@ -49,13 +49,15 @@ A `list` of `dict`, each `dict` stores the word_id of its title and body ***afte
 This `list` is sorted by page_id in ascending order.   
 * "id": int, page_id.  
 * "title": List[int], word_id for words in the title of this page.  
+* "title_word_pos": List[int], word position for every title word before stopword removal.  
 * "body": List[int], word_id for words in the body of this page.  
+* "body_word_pos: List[int], word_id for every body word before stopword removal.  
 
 ### `page_data/title_inverted_index.json`  
 This is the index that map from word to pages that contains this word.  
 It is a `list` of `dict`, each `dict` represents a word.  
 * "id": int, word_id  
-* "doc": A `list` of 2-elem `list`, each 2-elem `list` is [doc_id, number_of_occurence_in_this_doc]  
+* "doc": A `list` of 3-elem `list`, each 3-elem `list` is [doc_id, number_of_occurence_in_this_doc, [positions of all occurrences of the character in the string]]  
 
 ### `page_data/body_inverted_index.json`  
 Same as `title_inverted_index.json`.  

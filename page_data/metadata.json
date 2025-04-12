@@ -27,9 +27,9 @@
     "freq_words": {
       "test": 2,
       "page": 2,
-      "crawler": 1,
-      "get": 1,
-      "admiss": 1
+      "is": 2,
+      "the": 2,
+      "of": 2
     }
   },
   {
@@ -889,11 +889,11 @@
     "pagerank": 1.5533590551267586,
     "size": 19516,
     "freq_words": {
+      "the": 93,
       "2004": 33,
+      "of": 29,
       "2002": 26,
-      "2003": 24,
-      "2000": 24,
-      "2001": 19
+      "2003": 24
     }
   },
   {
@@ -922,7 +922,8 @@
       "news": 4,
       "bbc": 1,
       "cnn": 1,
-      "main": 1
+      "back": 1,
+      "to": 1
     }
   },
   {
@@ -952,10 +953,10 @@
     "size": 532,
     "freq_words": {
       "book": 2,
-      "articl": 1,
-      "read": 1,
-      "autom": 1,
-      "keyword": 1
+      "and": 2,
+      "to": 2,
+      "of": 2,
+      "articl": 1
     }
   },
   {
@@ -981,11 +982,11 @@
     "pagerank": 1.5533590551267586,
     "size": 332,
     "freq_words": {
+      "c": 2,
       "se": 2,
       "depart": 2,
-      "hk": 2,
-      "ust": 2,
-      "admiss": 2
+      "of": 2,
+      "hk": 2
     }
   },
   {
@@ -1005,11 +1006,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6617,
     "freq_words": {
+      "the": 20,
+      "more": 19,
+      "and": 15,
       "imdb": 14,
-      "movi": 13,
-      "user": 12,
-      "rate": 9,
-      "dvd": 8
+      "movi": 13
     }
   },
   {
@@ -1054,10 +1055,10 @@
     "size": 3498,
     "freq_words": {
       "8": 23,
+      "man": 20,
       "search": 17,
       "titl": 15,
-      "imdb": 8,
-      "movi": 8
+      "the": 12
     }
   },
   {
@@ -1077,11 +1078,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5923,
     "freq_words": {
+      "the": 17,
       "movi": 14,
       "imdb": 14,
-      "user": 12,
-      "rate": 11,
-      "pressur": 9
+      "more": 12,
+      "user": 12
     }
   },
   {
@@ -1105,7 +1106,7 @@
       "titl": 11,
       "imdb": 8,
       "movi": 8,
-      "angelina": 7
+      "for": 8
     }
   },
   {
@@ -1149,11 +1150,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6911,
     "freq_words": {
+      "the": 30,
       "movi": 17,
-      "imdb": 14,
-      "user": 12,
-      "plot": 9,
-      "rate": 9
+      "more": 16,
+      "and": 16,
+      "to": 15
     }
   },
   {
@@ -1200,8 +1201,8 @@
       "obsess": 28,
       "search": 17,
       "titl": 16,
-      "daydream": 9,
-      "imdb": 8
+      "the": 11,
+      "daydream": 9
     }
   },
   {
@@ -1221,11 +1222,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3771,
     "freq_words": {
+      "and": 17,
       "titl": 17,
       "search": 17,
       "sanford": 16,
-      "son": 11,
-      "imdb": 8
+      "the": 16
     }
   },
   {
@@ -1249,7 +1250,7 @@
       "trek": 25,
       "voyag": 21,
       "titl": 21,
-      "search": 18
+      "the": 21
     }
   },
   {
@@ -1269,11 +1270,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7342,
     "freq_words": {
+      "the": 45,
       "movi": 19,
-      "imdb": 14,
-      "user": 13,
-      "detail": 9,
-      "rate": 9
+      "more": 19,
+      "and": 19,
+      "of": 17
     }
   },
   {
@@ -1293,11 +1294,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7099,
     "freq_words": {
+      "more": 20,
+      "in": 18,
+      "a": 16,
       "movi": 15,
-      "imdb": 14,
-      "ni": 13,
-      "user": 13,
-      "notch": 11
+      "to": 15
     }
   },
   {
@@ -1317,11 +1318,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8378,
     "freq_words": {
+      "the": 33,
+      "a": 25,
       "movi": 14,
       "imdb": 14,
-      "taliban": 14,
-      "user": 13,
-      "tv": 12
+      "taliban": 14
     }
   },
   {
@@ -1365,11 +1366,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4803,
     "freq_words": {
+      "the": 20,
       "imdb": 14,
       "dvd": 12,
       "user": 12,
-      "play": 10,
-      "movi": 10
+      "more": 11
     }
   },
   {
@@ -1390,10 +1391,10 @@
     "size": 4008,
     "freq_words": {
       "charact": 42,
+      "the": 20,
       "search": 17,
       "titl": 16,
-      "imdb": 8,
-      "movi": 8
+      "for": 9
     }
   },
   {
@@ -1417,7 +1418,7 @@
       "titl": 11,
       "imdb": 8,
       "movi": 8,
-      "denis": 7
+      "for": 8
     }
   },
   {
@@ -1437,11 +1438,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6687,
     "freq_words": {
-      "imdb": 14,
-      "user": 13,
-      "movi": 12,
-      "mann": 10,
-      "rate": 9
+      "a": 31,
+      "and": 30,
+      "to": 22,
+      "the": 20,
+      "imdb": 14
     }
   },
   {
@@ -1461,11 +1462,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6805,
     "freq_words": {
+      "in": 22,
+      "the": 22,
+      "more": 18,
       "movi": 15,
-      "imdb": 14,
-      "user": 13,
-      "miss": 11,
-      "action": 11
+      "imdb": 14
     }
   },
   {
@@ -1485,11 +1486,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6818,
     "freq_words": {
+      "to": 44,
       "za": 28,
+      "the": 28,
       "ichi": 26,
-      "imdb": 14,
-      "movi": 12,
-      "user": 12
+      "a": 23
     }
   },
   {
@@ -1512,8 +1513,8 @@
       "antarctica": 22,
       "titl": 17,
       "search": 17,
-      "tv": 9,
-      "natur": 8
+      "the": 11,
+      "to": 11
     }
   },
   {
@@ -1533,11 +1534,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3736,
     "freq_words": {
+      "the": 36,
       "search": 17,
+      "of": 16,
       "titl": 13,
-      "tv": 13,
-      "form": 10,
-      "chi": 9
+      "tv": 13
     }
   },
   {
@@ -1559,9 +1560,9 @@
     "freq_words": {
       "search": 17,
       "titl": 11,
+      "will": 8,
       "imdb": 8,
-      "movi": 8,
-      "midsom": 7
+      "movi": 8
     }
   },
   {
@@ -1581,11 +1582,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6428,
     "freq_words": {
+      "the": 32,
+      "and": 24,
       "movi": 19,
       "imdb": 14,
-      "user": 12,
-      "rate": 9,
-      "dvd": 7
+      "thi": 14
     }
   },
   {
@@ -1605,11 +1606,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6256,
     "freq_words": {
+      "the": 26,
       "movi": 18,
+      "more": 16,
       "imdb": 14,
-      "user": 12,
-      "butch": 9,
-      "sundanc": 9
+      "and": 13
     }
   },
   {
@@ -1629,11 +1630,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6311,
     "freq_words": {
+      "the": 26,
       "imdb": 14,
-      "movi": 12,
-      "user": 12,
-      "dvd": 9,
-      "titl": 9
+      "more": 13,
+      "i": 13,
+      "movi": 12
     }
   },
   {
@@ -1654,10 +1655,10 @@
     "size": 5093,
     "freq_words": {
       "imdb": 14,
+      "in": 12,
       "user": 12,
-      "movi": 10,
-      "live": 9,
-      "rate": 9
+      "the": 12,
+      "movi": 10
     }
   },
   {
@@ -1677,11 +1678,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7915,
     "freq_words": {
-      "imdb": 14,
-      "movi": 13,
-      "user": 13,
-      "dvd": 9,
-      "rate": 9
+      "the": 40,
+      "more": 21,
+      "a": 18,
+      "and": 16,
+      "to": 16
     }
   },
   {
@@ -1701,11 +1702,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3746,
     "freq_words": {
+      "the": 30,
       "festiv": 22,
       "live": 18,
       "search": 17,
-      "titl": 15,
-      "tv": 9
+      "at": 16
     }
   },
   {
@@ -1725,11 +1726,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5856,
     "freq_words": {
+      "and": 17,
+      "more": 16,
       "imdb": 14,
-      "movi": 12,
-      "user": 12,
-      "ta": 9,
-      "dvd": 9
+      "a": 13,
+      "the": 13
     }
   },
   {
@@ -1753,7 +1754,7 @@
       "titl": 11,
       "imdb": 8,
       "movi": 8,
-      "billi": 7
+      "for": 8
     }
   },
   {
@@ -1776,8 +1777,8 @@
       "imdb": 14,
       "movi": 13,
       "user": 12,
-      "rate": 10,
-      "hokey": 10
+      "the": 12,
+      "more": 10
     }
   },
   {
@@ -1797,11 +1798,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4110,
     "freq_words": {
+      "the": 41,
       "bridg": 29,
       "titl": 18,
       "search": 17,
-      "sam": 9,
-      "iron": 9
+      "of": 13
     }
   },
   {
@@ -1823,9 +1824,9 @@
     "freq_words": {
       "search": 17,
       "titl": 16,
+      "the": 13,
       "complet": 11,
-      "tv": 9,
-      "sha": 8
+      "of": 10
     }
   },
   {
@@ -1845,11 +1846,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4135,
     "freq_words": {
+      "the": 57,
       "choru": 46,
       "titl": 17,
       "search": 17,
-      "girl": 17,
-      "imdb": 8
+      "girl": 17
     }
   },
   {
@@ -1871,9 +1872,9 @@
     "freq_words": {
       "search": 17,
       "titl": 11,
-      "imdb": 8,
-      "movi": 8,
-      "marilyn": 7
+      "a": 10,
+      "of": 9,
+      "imdb": 8
     }
   },
   {
@@ -1893,11 +1894,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7377,
     "freq_words": {
+      "s": 28,
+      "the": 19,
+      "in": 18,
       "imdb": 14,
-      "lee": 14,
-      "user": 13,
-      "movi": 10,
-      "film": 10
+      "lee": 14
     }
   },
   {
@@ -1917,11 +1918,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3283,
     "freq_words": {
+      "the": 33,
       "game": 26,
       "search": 19,
       "titl": 16,
-      "match": 10,
-      "imdb": 8
+      "match": 10
     }
   },
   {
@@ -1965,11 +1966,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8940,
     "freq_words": {
-      "movi": 18,
-      "evelyn": 15,
-      "imdb": 14,
-      "user": 13,
-      "doyl": 13
+      "the": 41,
+      "a": 24,
+      "more": 22,
+      "of": 19,
+      "movi": 18
     }
   },
   {
@@ -1989,11 +1990,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5980,
     "freq_words": {
+      "the": 16,
       "imdb": 14,
+      "more": 14,
       "user": 13,
-      "movi": 12,
-      "film": 10,
-      "rate": 9
+      "movi": 12
     }
   },
   {
@@ -2013,11 +2014,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3379,
     "freq_words": {
+      "back": 28,
+      "way": 25,
       "search": 17,
       "titl": 15,
-      "imdb": 8,
-      "movi": 8,
-      "tv": 7
+      "no": 14
     }
   },
   {
@@ -2037,11 +2038,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6508,
     "freq_words": {
+      "more": 19,
+      "the": 15,
       "movi": 14,
       "imdb": 14,
-      "user": 13,
-      "querel": 11,
-      "rate": 10
+      "and": 13
     }
   },
   {
@@ -2061,11 +2062,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6984,
     "freq_words": {
+      "the": 39,
+      "more": 18,
+      "s": 15,
       "movi": 15,
-      "imdb": 14,
-      "user": 13,
-      "pv": 11,
-      "devil": 10
+      "imdb": 14
     }
   },
   {
@@ -2085,11 +2086,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7637,
     "freq_words": {
+      "the": 35,
+      "more": 20,
+      "s": 18,
       "movi": 15,
-      "voic": 15,
-      "imdb": 14,
-      "charlott": 13,
-      "user": 13
+      "and": 15
     }
   },
   {
@@ -2109,11 +2110,11 @@
     "pagerank": 0.8615965128687798,
     "size": 2830,
     "freq_words": {
+      "the": 22,
       "search": 17,
       "titl": 12,
       "histori": 8,
-      "channel": 8,
-      "imdb": 8
+      "channel": 8
     }
   },
   {
@@ -2133,11 +2134,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5971,
     "freq_words": {
+      "more": 17,
+      "the": 15,
       "imdb": 14,
-      "movi": 12,
-      "user": 12,
-      "rate": 10,
-      "dvd": 9
+      "and": 13,
+      "movi": 12
     }
   },
   {
@@ -2157,11 +2158,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4086,
     "freq_words": {
+      "the": 39,
+      "of": 27,
+      "make": 20,
       "search": 17,
-      "season": 15,
-      "titl": 15,
-      "tv": 11,
-      "2": 10
+      "season": 15
     }
   },
   {
@@ -2181,11 +2182,11 @@
     "pagerank": 0.8615965128687798,
     "size": 11108,
     "freq_words": {
-      "film": 20,
-      "imdb": 14,
-      "rate": 14,
-      "user": 13,
-      "18": 13
+      "the": 47,
+      "a": 34,
+      "and": 25,
+      "to": 24,
+      "more": 23
     }
   },
   {
@@ -2205,11 +2206,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3296,
     "freq_words": {
+      "in": 18,
       "search": 17,
       "titl": 16,
       "sarah": 15,
-      "brightman": 15,
-      "concert": 13
+      "brightman": 15
     }
   },
   {
@@ -2229,11 +2230,11 @@
     "pagerank": 0.8615965128687798,
     "size": 2907,
     "freq_words": {
+      "the": 24,
       "search": 17,
       "titl": 12,
-      "experi": 9,
-      "jeff": 8,
-      "corwin": 8
+      "and": 10,
+      "experi": 9
     }
   },
   {
@@ -2253,11 +2254,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7939,
     "freq_words": {
+      "the": 32,
+      "more": 20,
+      "a": 18,
       "imdb": 14,
-      "movi": 13,
-      "user": 13,
-      "rate": 10,
-      "dvd": 9
+      "to": 14
     }
   },
   {
@@ -2277,11 +2278,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3882,
     "freq_words": {
+      "the": 62,
       "world": 29,
-      "search": 17,
-      "strongest": 16,
-      "titl": 15,
-      "movi": 10
+      "in": 28,
+      "man": 25,
+      "search": 17
     }
   },
   {
@@ -2302,10 +2303,10 @@
     "size": 6333,
     "freq_words": {
       "movi": 16,
+      "more": 15,
+      "the": 15,
       "imdb": 14,
-      "user": 13,
-      "rate": 11,
-      "dvd": 8
+      "and": 14
     }
   },
   {
@@ -2325,11 +2326,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5077,
     "freq_words": {
+      "the": 19,
       "imdb": 14,
       "user": 12,
       "episod": 11,
-      "rate": 11,
-      "movi": 10
+      "rate": 11
     }
   },
   {
@@ -2351,9 +2352,9 @@
     "freq_words": {
       "blossom": 29,
       "titl": 21,
+      "the": 18,
       "search": 17,
-      "broken": 13,
-      "aka": 12
+      "broken": 13
     }
   },
   {
@@ -2373,11 +2374,11 @@
     "pagerank": 0.8615965128687798,
     "size": 9335,
     "freq_words": {
-      "zeppelin": 18,
-      "led": 17,
-      "imdb": 14,
-      "movi": 13,
-      "user": 13
+      "the": 61,
+      "more": 22,
+      "and": 22,
+      "of": 21,
+      "a": 20
     }
   },
   {
@@ -2397,11 +2398,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3504,
     "freq_words": {
-      "search": 17,
-      "titl": 16,
-      "imdb": 8,
-      "movi": 8,
-      "tv": 7
+      "back": 31,
+      "came": 24,
+      "the": 22,
+      "they": 17,
+      "search": 17
     }
   },
   {
@@ -2421,11 +2422,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4101,
     "freq_words": {
+      "the": 35,
+      "of": 27,
       "song": 24,
-      "search": 17,
-      "titl": 15,
-      "sing": 14,
-      "tv": 12
+      "a": 19,
+      "search": 17
     }
   },
   {
@@ -2445,11 +2446,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3844,
     "freq_words": {
+      "the": 38,
       "day": 19,
       "clifford": 18,
       "search": 17,
-      "save": 16,
-      "titl": 13
+      "save": 16
     }
   },
   {
@@ -2469,11 +2470,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7062,
     "freq_words": {
+      "the": 38,
+      "more": 21,
+      "of": 20,
       "movi": 16,
-      "imdb": 14,
-      "user": 13,
-      "empir": 10,
-      "roman": 9
+      "imdb": 14
     }
   },
   {
@@ -2495,9 +2496,9 @@
     "freq_words": {
       "movi": 15,
       "imdb": 14,
+      "and": 13,
       "user": 13,
-      "rate": 10,
-      "dvd": 8
+      "a": 13
     }
   },
   {
@@ -2520,8 +2521,8 @@
       "search": 17,
       "titl": 14,
       "danc": 11,
-      "paula": 9,
-      "abdul": 9
+      "up": 10,
+      "paula": 9
     }
   },
   {
@@ -2565,11 +2566,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7213,
     "freq_words": {
+      "the": 21,
+      "more": 19,
       "movi": 18,
-      "imdb": 14,
-      "user": 13,
-      "rate": 10,
-      "dvd": 8
+      "and": 17,
+      "imdb": 14
     }
   },
   {
@@ -2613,11 +2614,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8474,
     "freq_words": {
+      "the": 139,
       "kill": 126,
       "aka": 41,
       "titl": 33,
-      "tv": 20,
-      "search": 17
+      "of": 33
     }
   },
   {
@@ -2637,11 +2638,11 @@
     "pagerank": 0.8615965128687798,
     "size": 9712,
     "freq_words": {
-      "movi": 15,
-      "imdb": 14,
-      "film": 14,
-      "user": 13,
-      "rate": 12
+      "the": 52,
+      "more": 24,
+      "and": 23,
+      "of": 22,
+      "a": 21
     }
   },
   {
@@ -2661,11 +2662,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6550,
     "freq_words": {
+      "more": 16,
+      "a": 16,
+      "the": 16,
       "imdb": 14,
-      "user": 13,
-      "movi": 11,
-      "rate": 10,
-      "dvd": 8
+      "user": 13
     }
   },
   {
@@ -2685,11 +2686,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8822,
     "freq_words": {
-      "imdb": 15,
-      "movi": 14,
-      "user": 13,
-      "film": 12,
-      "winter": 11
+      "the": 45,
+      "and": 26,
+      "a": 22,
+      "to": 19,
+      "more": 18
     }
   },
   {
@@ -2709,11 +2710,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6894,
     "freq_words": {
+      "the": 27,
+      "more": 19,
       "movi": 14,
       "imdb": 14,
-      "user": 13,
-      "rate": 12,
-      "valentin": 10
+      "user": 13
     }
   },
   {
@@ -2733,11 +2734,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3873,
     "freq_words": {
+      "the": 29,
       "libertin": 23,
       "titl": 19,
       "search": 17,
-      "aka": 11,
-      "result": 9
+      "aka": 11
     }
   },
   {
@@ -2757,11 +2758,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5415,
     "freq_words": {
+      "the": 16,
       "imdb": 14,
       "user": 12,
       "movi": 11,
-      "rate": 9,
-      "neil": 8
+      "more": 11
     }
   },
   {
@@ -2781,11 +2782,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6494,
     "freq_words": {
+      "a": 22,
       "segment": 17,
       "movi": 14,
       "imdb": 14,
-      "dvd": 12,
-      "user": 12
+      "more": 14
     }
   },
   {
@@ -2805,11 +2806,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3511,
     "freq_words": {
+      "the": 28,
       "love": 26,
       "letter": 25,
       "search": 17,
-      "titl": 16,
-      "imdb": 8
+      "titl": 16
     }
   },
   {
@@ -2829,11 +2830,11 @@
     "pagerank": 0.8615965128687798,
     "size": 9570,
     "freq_words": {
+      "the": 37,
+      "and": 23,
       "episod": 21,
-      "zim": 16,
-      "2001": 15,
-      "imdb": 14,
-      "rate": 13
+      "a": 19,
+      "more": 18
     }
   },
   {
@@ -2853,11 +2854,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7052,
     "freq_words": {
+      "the": 30,
+      "more": 20,
       "movi": 17,
       "imdb": 14,
-      "user": 13,
-      "rate": 13,
-      "plot": 9
+      "and": 13
     }
   },
   {
@@ -2901,11 +2902,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6765,
     "freq_words": {
+      "a": 19,
+      "on": 17,
+      "no": 15,
       "imdb": 14,
-      "movi": 13,
-      "user": 13,
-      "version": 13,
-      "english": 13
+      "movi": 13
     }
   },
   {
@@ -2925,11 +2926,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5819,
     "freq_words": {
+      "the": 17,
       "imdb": 14,
-      "user": 12,
-      "movi": 11,
-      "rate": 10,
-      "home": 8
+      "more": 14,
+      "a": 14,
+      "and": 13
     }
   },
   {
@@ -2949,11 +2950,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7195,
     "freq_words": {
+      "the": 27,
+      "more": 17,
+      "a": 17,
       "imdb": 14,
-      "user": 13,
-      "rate": 11,
-      "movi": 10,
-      "dvd": 10
+      "of": 13
     }
   },
   {
@@ -2975,9 +2976,9 @@
     "freq_words": {
       "search": 17,
       "titl": 11,
+      "a": 10,
       "imdb": 8,
-      "movi": 8,
-      "enigma": 7
+      "movi": 8
     }
   },
   {
@@ -2999,9 +3000,9 @@
     "freq_words": {
       "vampir": 34,
       "aka": 22,
+      "mr": 19,
       "titl": 17,
-      "search": 17,
-      "imdb": 8
+      "search": 17
     }
   },
   {
@@ -3021,11 +3022,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6819,
     "freq_words": {
+      "the": 23,
+      "more": 20,
       "movi": 18,
       "imdb": 14,
-      "user": 13,
-      "2000": 10,
-      "cherri": 9
+      "user": 13
     }
   },
   {
@@ -3045,11 +3046,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3516,
     "freq_words": {
+      "of": 23,
+      "a": 21,
       "titl": 19,
       "killer": 17,
-      "search": 17,
-      "portrait": 15,
-      "serial": 14
+      "search": 17
     }
   },
   {
@@ -3069,11 +3070,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8368,
     "freq_words": {
-      "imdb": 14,
-      "advertis": 13,
-      "movi": 12,
-      "user": 12,
-      "plot": 11
+      "the": 54,
+      "and": 18,
+      "to": 18,
+      "of": 17,
+      "is": 17
     }
   },
   {
@@ -3095,9 +3096,9 @@
     "freq_words": {
       "imdb": 14,
       "movi": 12,
+      "the": 11,
       "user": 10,
-      "rate": 9,
-      "travel": 8
+      "rate": 9
     }
   },
   {
@@ -3165,11 +3166,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8754,
     "freq_words": {
-      "movi": 15,
-      "imdb": 14,
-      "user": 13,
-      "rate": 13,
-      "take": 9
+      "the": 25,
+      "more": 22,
+      "a": 22,
+      "to": 21,
+      "s": 16
     }
   },
   {
@@ -3189,11 +3190,11 @@
     "pagerank": 0.8615965128687798,
     "size": 10489,
     "freq_words": {
-      "film": 24,
-      "ghost": 17,
-      "dog": 17,
-      "samurai": 15,
-      "movi": 15
+      "the": 67,
+      "a": 31,
+      "and": 28,
+      "of": 25,
+      "more": 25
     }
   },
   {
@@ -3217,7 +3218,7 @@
       "search": 17,
       "titl": 15,
       "tv": 15,
-      "en": 9
+      "in": 13
     }
   },
   {
@@ -3261,11 +3262,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7714,
     "freq_words": {
+      "the": 35,
+      "more": 21,
       "movi": 20,
       "imdb": 14,
-      "user": 13,
-      "airplan": 12,
-      "rate": 11
+      "and": 13
     }
   },
   {
@@ -3289,7 +3290,7 @@
       "bear": 22,
       "search": 17,
       "cub": 15,
-      "aka": 11
+      "the": 13
     }
   },
   {
@@ -3309,11 +3310,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7152,
     "freq_words": {
-      "movi": 16,
-      "imdb": 14,
-      "user": 13,
-      "rate": 10,
-      "titl": 8
+      "the": 29,
+      "a": 21,
+      "more": 20,
+      "and": 17,
+      "movi": 16
     }
   },
   {
@@ -3333,11 +3334,11 @@
     "pagerank": 0.8615965128687798,
     "size": 2997,
     "freq_words": {
+      "the": 32,
+      "of": 18,
       "search": 17,
       "titl": 12,
-      "return": 9,
-      "movi": 9,
-      "lord": 8
+      "return": 9
     }
   },
   {
@@ -3358,10 +3359,10 @@
     "size": 4787,
     "freq_words": {
       "imdb": 14,
+      "the": 13,
       "movi": 12,
       "user": 12,
-      "rate": 9,
-      "dvd": 8
+      "of": 11
     }
   },
   {
@@ -3381,11 +3382,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7828,
     "freq_words": {
+      "the": 37,
       "dragon": 22,
+      "more": 22,
       "movi": 16,
-      "imdb": 14,
-      "user": 13,
-      "rate": 12
+      "imdb": 14
     }
   },
   {
@@ -3405,11 +3406,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7977,
     "freq_words": {
+      "the": 39,
+      "more": 20,
       "movi": 18,
       "imdb": 14,
-      "user": 13,
-      "plot": 11,
-      "rate": 10
+      "a": 14
     }
   },
   {
@@ -3429,11 +3430,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5969,
     "freq_words": {
+      "the": 16,
       "imdb": 14,
       "movi": 13,
       "user": 13,
-      "rate": 10,
-      "dvd": 8
+      "more": 12
     }
   },
   {
@@ -3457,7 +3458,7 @@
       "effect": 15,
       "titl": 14,
       "vampir": 13,
-      "aka": 12
+      "the": 13
     }
   },
   {
@@ -3477,11 +3478,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7615,
     "freq_words": {
+      "the": 32,
+      "a": 26,
+      "more": 17,
       "cast": 15,
-      "imdb": 14,
-      "movi": 13,
-      "user": 13,
-      "film": 11
+      "imdb": 14
     }
   },
   {
@@ -3504,8 +3505,8 @@
       "taxi": 258,
       "aka": 61,
       "titl": 43,
-      "tv": 22,
-      "driver": 21
+      "a": 35,
+      "the": 33
     }
   },
   {
@@ -3526,10 +3527,10 @@
     "size": 5636,
     "freq_words": {
       "imdb": 14,
+      "more": 14,
       "movi": 13,
       "user": 12,
-      "rate": 11,
-      "dvd": 8
+      "not": 11
     }
   },
   {
@@ -3550,10 +3551,10 @@
     "size": 3862,
     "freq_words": {
       "film": 28,
+      "the": 22,
       "search": 17,
       "titl": 14,
-      "tv": 14,
-      "derang": 10
+      "tv": 14
     }
   },
   {
@@ -3573,11 +3574,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4007,
     "freq_words": {
+      "the": 45,
+      "and": 33,
       "beauti": 32,
       "beast": 32,
-      "search": 17,
-      "titl": 16,
-      "tv": 11
+      "search": 17
     }
   },
   {
@@ -3597,11 +3598,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3605,
     "freq_words": {
+      "the": 35,
       "titl": 18,
       "search": 17,
       "cookout": 9,
-      "workout": 9,
-      "imdb": 8
+      "for": 9
     }
   },
   {
@@ -3621,11 +3622,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3678,
     "freq_words": {
+      "the": 36,
       "race": 30,
+      "great": 28,
       "search": 17,
-      "titl": 15,
-      "tv": 11,
-      "imdb": 8
+      "titl": 15
     }
   },
   {
@@ -3645,11 +3646,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8171,
     "freq_words": {
+      "the": 47,
       "littl": 28,
+      "more": 23,
       "stuart": 19,
-      "movi": 18,
-      "imdb": 14,
-      "user": 13
+      "movi": 18
     }
   },
   {
@@ -3669,11 +3670,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6756,
     "freq_words": {
+      "the": 31,
+      "more": 19,
       "movi": 18,
-      "marat": 14,
-      "imdb": 14,
-      "sade": 13,
-      "user": 13
+      "and": 15,
+      "marat": 14
     }
   },
   {
@@ -3693,11 +3694,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6793,
     "freq_words": {
+      "the": 32,
+      "more": 20,
+      "a": 15,
       "imdb": 14,
-      "user": 13,
-      "movi": 12,
-      "detail": 9,
-      "rate": 9
+      "and": 14
     }
   },
   {
@@ -3719,9 +3720,9 @@
     "freq_words": {
       "fighter": 229,
       "aka": 91,
+      "the": 72,
       "titl": 62,
-      "street": 58,
-      "vg": 40
+      "street": 58
     }
   },
   {
@@ -3741,11 +3742,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7318,
     "freq_words": {
+      "the": 28,
+      "more": 22,
       "imdb": 14,
-      "movi": 13,
-      "user": 13,
-      "richard": 11,
-      "rate": 11
+      "of": 14,
+      "movi": 13
     }
   },
   {
@@ -3767,9 +3768,9 @@
     "freq_words": {
       "search": 17,
       "titl": 11,
-      "imdb": 8,
-      "movi": 8,
-      "inspector": 7
+      "my": 10,
+      "is": 9,
+      "now": 9
     }
   },
   {
@@ -3790,10 +3791,10 @@
     "size": 3522,
     "freq_words": {
       "impostor": 40,
+      "the": 30,
       "search": 17,
       "titl": 15,
-      "tv": 10,
-      "el": 9
+      "tv": 10
     }
   },
   {
@@ -3815,9 +3816,9 @@
     "freq_words": {
       "search": 17,
       "titl": 15,
+      "and": 13,
       "car": 11,
-      "iru": 11,
-      "imdb": 8
+      "iru": 11
     }
   },
   {
@@ -3839,9 +3840,9 @@
     "freq_words": {
       "search": 17,
       "titl": 11,
+      "a": 10,
       "imdb": 8,
-      "movi": 8,
-      "allergi": 7
+      "movi": 8
     }
   },
   {
@@ -3864,8 +3865,8 @@
       "horror": 23,
       "search": 17,
       "titl": 16,
-      "vision": 14,
-      "tv": 10
+      "of": 16,
+      "the": 15
     }
   },
   {
@@ -3885,11 +3886,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6564,
     "freq_words": {
+      "more": 18,
+      "the": 16,
       "imdb": 14,
       "movi": 13,
-      "user": 13,
-      "gorm": 9,
-      "ghast": 9
+      "user": 13
     }
   },
   {
@@ -3910,10 +3911,10 @@
     "size": 3104,
     "freq_words": {
       "search": 17,
+      "the": 16,
       "mysteri": 14,
       "titl": 14,
-      "unsolv": 13,
-      "imdb": 8
+      "unsolv": 13
     }
   },
   {
@@ -3933,11 +3934,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6405,
     "freq_words": {
+      "more": 17,
+      "the": 16,
+      "a": 15,
       "imdb": 14,
-      "user": 13,
-      "movi": 10,
-      "rate": 10,
-      "dvd": 9
+      "to": 14
     }
   },
   {
@@ -3957,11 +3958,11 @@
     "pagerank": 0.8615965128687798,
     "size": 10792,
     "freq_words": {
-      "archiv": 17,
-      "footag": 17,
-      "imdb": 14,
-      "user": 13,
-      "weather": 12
+      "the": 70,
+      "of": 43,
+      "and": 29,
+      "more": 21,
+      "to": 19
     }
   },
   {
@@ -3982,10 +3983,10 @@
     "size": 2696,
     "freq_words": {
       "search": 17,
+      "the": 16,
       "titl": 12,
       "michael": 9,
-      "moor": 9,
-      "imdb": 8
+      "moor": 9
     }
   },
   {
@@ -4007,9 +4008,9 @@
     "freq_words": {
       "imdb": 14,
       "user": 12,
+      "thi": 12,
       "movi": 11,
-      "rate": 9,
-      "dvd": 8
+      "and": 11
     }
   },
   {
@@ -4033,7 +4034,7 @@
       "titl": 21,
       "bird": 19,
       "search": 17,
-      "aka": 15
+      "the": 16
     }
   },
   {
@@ -4077,11 +4078,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5523,
     "freq_words": {
+      "a": 16,
       "imdb": 14,
+      "more": 14,
       "user": 12,
-      "movi": 10,
-      "plot": 9,
-      "rate": 9
+      "movi": 10
     }
   },
   {
@@ -4101,11 +4102,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5762,
     "freq_words": {
+      "the": 18,
+      "in": 15,
       "imdb": 14,
       "user": 12,
-      "movi": 10,
-      "film": 10,
-      "rate": 9
+      "thi": 12
     }
   },
   {
@@ -4125,11 +4126,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7075,
     "freq_words": {
+      "the": 22,
+      "of": 17,
+      "a": 17,
       "imdb": 14,
-      "movi": 13,
-      "user": 12,
-      "class": 10,
-      "humanoid": 10
+      "more": 14
     }
   },
   {
@@ -4149,11 +4150,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7988,
     "freq_words": {
-      "imdb": 14,
-      "movi": 13,
-      "user": 13,
-      "plot": 10,
-      "detail": 9
+      "the": 31,
+      "a": 23,
+      "more": 21,
+      "and": 18,
+      "in": 15
     }
   },
   {
@@ -4173,11 +4174,11 @@
     "pagerank": 0.8615965128687798,
     "size": 2706,
     "freq_words": {
+      "to": 18,
       "search": 17,
+      "a": 12,
       "titl": 12,
-      "teacher": 9,
-      "iz": 9,
-      "uk": 9
+      "g": 10
     }
   },
   {
@@ -4199,9 +4200,9 @@
     "freq_words": {
       "search": 17,
       "titl": 12,
+      "the": 11,
       "materi": 8,
-      "imdb": 8,
-      "movi": 8
+      "imdb": 8
     }
   },
   {
@@ -4221,11 +4222,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6102,
     "freq_words": {
+      "the": 21,
       "movi": 19,
-      "imdb": 14,
-      "user": 13,
-      "home": 10,
-      "rate": 9
+      "more": 18,
+      "and": 17,
+      "imdb": 14
     }
   },
   {
@@ -4248,8 +4249,8 @@
       "scratch": 50,
       "titl": 23,
       "search": 17,
-      "aka": 12,
-      "imdb": 8
+      "the": 14,
+      "aka": 12
     }
   },
   {
@@ -4269,11 +4270,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7583,
     "freq_words": {
+      "the": 31,
+      "more": 19,
       "movi": 15,
       "imdb": 14,
-      "beethoven": 14,
-      "user": 13,
-      "detail": 9
+      "and": 14
     }
   },
   {
@@ -4296,8 +4297,8 @@
       "antarctica": 22,
       "titl": 17,
       "search": 17,
-      "tv": 10,
-      "aka": 9
+      "the": 16,
+      "tv": 10
     }
   },
   {
@@ -4317,11 +4318,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6415,
     "freq_words": {
+      "the": 25,
       "movi": 19,
+      "and": 15,
       "imdb": 14,
-      "wong": 13,
-      "user": 12,
-      "rate": 9
+      "more": 14
     }
   },
   {
@@ -4344,8 +4345,8 @@
       "jack": 22,
       "search": 19,
       "titl": 14,
-      "match": 10,
-      "imdb": 8
+      "the": 10,
+      "match": 10
     }
   },
   {
@@ -4390,10 +4391,10 @@
     "size": 3683,
     "freq_words": {
       "servic": 25,
+      "the": 19,
       "titl": 17,
       "search": 17,
-      "silent": 16,
-      "tv": 10
+      "silent": 16
     }
   },
   {
@@ -4413,11 +4414,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7025,
     "freq_words": {
+      "more": 21,
+      "the": 16,
       "movi": 15,
       "imdb": 14,
-      "user": 13,
-      "rate": 10,
-      "dvd": 8
+      "i": 14
     }
   },
   {
@@ -4437,11 +4438,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6321,
     "freq_words": {
+      "a": 31,
+      "more": 18,
+      "and": 15,
       "imdb": 14,
-      "movi": 12,
-      "user": 12,
-      "plot": 9,
-      "rate": 9
+      "movi": 12
     }
   },
   {
@@ -4461,11 +4462,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6735,
     "freq_words": {
+      "the": 22,
+      "more": 17,
+      "a": 15,
       "imdb": 14,
-      "user": 13,
-      "movi": 12,
-      "plot": 9,
-      "rate": 9
+      "and": 13
     }
   },
   {
@@ -4485,11 +4486,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7526,
     "freq_words": {
-      "imdb": 14,
-      "movi": 13,
-      "user": 12,
-      "plot": 10,
-      "rate": 9
+      "a": 33,
+      "the": 28,
+      "in": 18,
+      "and": 17,
+      "more": 15
     }
   },
   {
@@ -4510,10 +4511,10 @@
     "size": 3982,
     "freq_words": {
       "littl": 26,
+      "the": 23,
       "princess": 22,
       "titl": 22,
-      "search": 17,
-      "result": 9
+      "a": 18
     }
   },
   {
@@ -4536,8 +4537,8 @@
       "search": 17,
       "titl": 14,
       "dawn": 13,
-      "light": 12,
-      "imdb": 8
+      "s": 13,
+      "earli": 13
     }
   },
   {
@@ -4561,7 +4562,7 @@
       "titl": 20,
       "search": 17,
       "tv": 11,
-      "aka": 9
+      "the": 11
     }
   },
   {
@@ -4582,10 +4583,10 @@
     "size": 9657,
     "freq_words": {
       "voic": 60,
+      "the": 45,
       "version": 41,
       "english": 39,
-      "lod": 16,
-      "oss": 16
+      "of": 22
     }
   },
   {
@@ -4605,11 +4606,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7156,
     "freq_words": {
+      "the": 24,
+      "more": 20,
       "movi": 18,
-      "imdb": 14,
-      "user": 13,
-      "rate": 10,
-      "plot": 9
+      "a": 18,
+      "and": 15
     }
   },
   {
@@ -4629,11 +4630,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6918,
     "freq_words": {
-      "movi": 14,
-      "imdb": 14,
-      "avocado": 12,
-      "user": 12,
-      "women": 10
+      "the": 36,
+      "in": 16,
+      "more": 16,
+      "of": 14,
+      "movi": 14
     }
   },
   {
@@ -4653,11 +4654,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6062,
     "freq_words": {
+      "the": 21,
       "richard": 14,
       "pryor": 14,
       "imdb": 14,
-      "movi": 12,
-      "user": 12
+      "and": 14
     }
   },
   {
@@ -4677,11 +4678,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8511,
     "freq_words": {
+      "the": 37,
+      "more": 22,
       "movi": 15,
       "imdb": 14,
-      "fame": 13,
-      "user": 13,
-      "rate": 10
+      "and": 14
     }
   },
   {
@@ -4701,11 +4702,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8900,
     "freq_words": {
-      "version": 18,
-      "voic": 15,
-      "evangelion": 14,
-      "imdb": 14,
-      "user": 13
+      "the": 47,
+      "of": 25,
+      "more": 22,
+      "a": 21,
+      "to": 20
     }
   },
   {
@@ -4725,11 +4726,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8272,
     "freq_words": {
-      "rate": 15,
-      "imdb": 14,
-      "user": 13,
-      "movi": 12,
-      "film": 10
+      "the": 24,
+      "a": 22,
+      "more": 21,
+      "and": 19,
+      "is": 17
     }
   },
   {
@@ -4750,10 +4751,10 @@
     "size": 5973,
     "freq_words": {
       "imdb": 14,
+      "more": 14,
       "user": 13,
-      "movi": 11,
-      "rate": 9,
-      "dvd": 8
+      "the": 13,
+      "movi": 11
     }
   },
   {
@@ -4773,11 +4774,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3769,
     "freq_words": {
+      "the": 33,
+      "of": 21,
       "search": 17,
       "america": 14,
-      "titl": 14,
-      "empir": 12,
-      "tv": 11
+      "titl": 14
     }
   },
   {
@@ -4799,9 +4800,9 @@
     "freq_words": {
       "search": 17,
       "titl": 15,
+      "mostli": 11,
       "martha": 11,
-      "imdb": 8,
-      "movi": 8
+      "imdb": 8
     }
   },
   {
@@ -4821,11 +4822,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7134,
     "freq_words": {
+      "the": 33,
+      "of": 20,
+      "a": 15,
       "imdb": 14,
-      "user": 13,
-      "movi": 12,
-      "rate": 10,
-      "plot": 9
+      "more": 14
     }
   },
   {
@@ -4845,11 +4846,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8532,
     "freq_words": {
+      "the": 60,
       "movi": 22,
-      "imdb": 14,
-      "voic": 14,
-      "powerpuff": 13,
-      "user": 13
+      "more": 21,
+      "and": 21,
+      "s": 19
     }
   },
   {
@@ -4869,11 +4870,11 @@
     "pagerank": 0.8615965128687798,
     "size": 11167,
     "freq_words": {
-      "movi": 30,
-      "imdb": 14,
-      "cha": 13,
-      "user": 13,
-      "land": 12
+      "the": 53,
+      "and": 35,
+      "to": 34,
+      "s": 32,
+      "movi": 30
     }
   },
   {
@@ -4895,9 +4896,9 @@
     "freq_words": {
       "warrior": 28,
       "titl": 18,
+      "the": 18,
       "search": 17,
-      "movi": 10,
-      "demon": 9
+      "movi": 10
     }
   },
   {
@@ -4917,11 +4918,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3682,
     "freq_words": {
+      "and": 44,
       "blood": 30,
       "titl": 20,
-      "search": 17,
-      "aka": 13,
-      "imdb": 8
+      "s": 17,
+      "search": 17
     }
   },
   {
@@ -4941,11 +4942,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4147,
     "freq_words": {
+      "what": 30,
+      "the": 28,
+      "know": 23,
       "titl": 19,
-      "search": 17,
-      "imdb": 8,
-      "movi": 8,
-      "aka": 8
+      "do": 17
     }
   },
   {
@@ -4965,11 +4966,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6426,
     "freq_words": {
+      "the": 19,
+      "to": 16,
       "imdb": 14,
-      "user": 13,
-      "movi": 10,
-      "rate": 10,
-      "dvd": 8
+      "a": 14,
+      "user": 13
     }
   },
   {
@@ -4993,7 +4994,7 @@
       "titl": 11,
       "imdb": 8,
       "movi": 8,
-      "duplex": 7
+      "for": 8
     }
   },
   {
@@ -5017,7 +5018,7 @@
       "titl": 11,
       "imdb": 8,
       "movi": 8,
-      "magnolia": 7
+      "for": 8
     }
   },
   {
@@ -5037,11 +5038,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3394,
     "freq_words": {
+      "the": 40,
       "canari": 26,
+      "and": 18,
       "search": 17,
-      "cat": 15,
-      "titl": 15,
-      "imdb": 8
+      "cat": 15
     }
   },
   {
@@ -5061,11 +5062,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6432,
     "freq_words": {
+      "more": 17,
+      "the": 17,
       "movi": 16,
       "imdb": 14,
-      "user": 13,
-      "rate": 11,
-      "dvd": 10
+      "user": 13
     }
   },
   {
@@ -5086,10 +5087,10 @@
     "size": 5243,
     "freq_words": {
       "sick": 72,
+      "the": 27,
       "titl": 19,
       "search": 17,
-      "aka": 14,
-      "tv": 10
+      "of": 14
     }
   },
   {
@@ -5109,11 +5110,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3863,
     "freq_words": {
+      "the": 37,
       "stitch": 19,
+      "and": 18,
       "titl": 17,
-      "search": 17,
-      "lilo": 14,
-      "tv": 9
+      "search": 17
     }
   },
   {
@@ -5134,10 +5135,10 @@
     "size": 5926,
     "freq_words": {
       "imdb": 14,
+      "to": 13,
+      "the": 13,
       "movi": 12,
-      "user": 12,
-      "plot": 11,
-      "rate": 10
+      "and": 12
     }
   },
   {
@@ -5157,11 +5158,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6958,
     "freq_words": {
+      "the": 24,
+      "a": 17,
+      "more": 15,
       "movi": 14,
-      "imdb": 14,
-      "user": 12,
-      "rate": 9,
-      "dvd": 8
+      "imdb": 14
     }
   },
   {
@@ -5182,10 +5183,10 @@
     "size": 4112,
     "freq_words": {
       "goddess": 30,
+      "of": 30,
       "titl": 26,
-      "search": 17,
-      "aka": 16,
-      "merci": 12
+      "the": 25,
+      "search": 17
     }
   },
   {
@@ -5205,11 +5206,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6093,
     "freq_words": {
+      "the": 103,
       "hunter": 81,
       "titl": 25,
       "aka": 24,
-      "search": 17,
-      "tv": 12
+      "search": 17
     }
   },
   {
@@ -5229,11 +5230,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3904,
     "freq_words": {
+      "the": 43,
       "strangler": 30,
       "titl": 18,
       "search": 17,
-      "aka": 13,
-      "boston": 11
+      "aka": 13
     }
   },
   {
@@ -5255,9 +5256,9 @@
     "freq_words": {
       "search": 17,
       "titl": 13,
+      "of": 11,
       "2004": 11,
-      "review": 11,
-      "imdb": 8
+      "review": 11
     }
   },
   {
@@ -5277,11 +5278,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7217,
     "freq_words": {
-      "imdb": 14,
-      "movi": 12,
-      "user": 12,
-      "rate": 9,
-      "dvd": 8
+      "the": 28,
+      "a": 19,
+      "in": 19,
+      "more": 17,
+      "and": 16
     }
   },
   {
@@ -5301,11 +5302,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3071,
     "freq_words": {
+      "the": 25,
+      "to": 21,
       "search": 17,
       "voyag": 13,
-      "titl": 13,
-      "planet": 11,
-      "beyond": 10
+      "titl": 13
     }
   },
   {
@@ -5325,11 +5326,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6973,
     "freq_words": {
+      "the": 31,
+      "more": 18,
       "movi": 16,
-      "voic": 15,
-      "imdb": 14,
-      "user": 13,
-      "plot": 9
+      "and": 16,
+      "voic": 15
     }
   },
   {
@@ -5353,7 +5354,7 @@
       "titl": 17,
       "search": 17,
       "leagu": 14,
-      "tv": 9
+      "for": 10
     }
   },
   {
@@ -5373,11 +5374,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7862,
     "freq_words": {
+      "the": 38,
+      "more": 26,
+      "in": 18,
       "cube": 17,
-      "movi": 16,
-      "hypercub": 15,
-      "imdb": 14,
-      "user": 13
+      "movi": 16
     }
   },
   {
@@ -5397,11 +5398,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3821,
     "freq_words": {
+      "the": 30,
       "street": 28,
       "search": 17,
-      "sesam": 13,
-      "titl": 13,
-      "tv": 11
+      "on": 15,
+      "sesam": 13
     }
   },
   {
@@ -5425,7 +5426,7 @@
       "search": 17,
       "titl": 16,
       "mtv": 15,
-      "tv": 9
+      "v": 12
     }
   },
   {
@@ -5446,10 +5447,10 @@
     "size": 4620,
     "freq_words": {
       "imdb": 14,
+      "the": 13,
       "movi": 12,
       "user": 12,
-      "rate": 9,
-      "dvd": 7
+      "a": 10
     }
   },
   {
@@ -5469,11 +5470,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3775,
     "freq_words": {
+      "the": 36,
       "outsid": 28,
       "titl": 20,
       "law": 19,
-      "search": 17,
-      "aka": 12
+      "search": 17
     }
   },
   {
@@ -5493,11 +5494,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3792,
     "freq_words": {
-      "search": 17,
-      "rl": 14,
-      "titl": 14,
-      "tv": 11,
-      "movi": 9
+      "the": 41,
+      "of": 33,
+      "best": 29,
+      "a": 17,
+      "search": 17
     }
   },
   {
@@ -5517,11 +5518,11 @@
     "pagerank": 0.8615965128687798,
     "size": 2849,
     "freq_words": {
+      "the": 20,
       "search": 17,
       "titl": 13,
       "rudolph": 11,
-      "red": 11,
-      "nose": 11
+      "red": 11
     }
   },
   {
@@ -5542,10 +5543,10 @@
     "size": 7500,
     "freq_words": {
       "archiv": 58,
+      "himself": 57,
       "footag": 57,
       "imdb": 14,
-      "movi": 13,
-      "de": 12
+      "movi": 13
     }
   },
   {
@@ -5589,11 +5590,11 @@
     "pagerank": 0.8615965128687798,
     "size": 9575,
     "freq_words": {
-      "band": 20,
-      "movi": 18,
-      "imdb": 14,
-      "user": 13,
-      "smokey": 12
+      "the": 67,
+      "and": 38,
+      "it": 29,
+      "to": 28,
+      "a": 23
     }
   },
   {
@@ -5614,10 +5615,10 @@
     "size": 6767,
     "freq_words": {
       "movi": 22,
-      "imdb": 14,
-      "user": 13,
-      "rate": 9,
-      "dvd": 8
+      "more": 17,
+      "thi": 16,
+      "i": 16,
+      "and": 15
     }
   },
   {
@@ -5661,11 +5662,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4186,
     "freq_words": {
+      "the": 41,
+      "and": 27,
       "citi": 26,
       "titl": 18,
-      "search": 17,
-      "sex": 15,
-      "tv": 11
+      "search": 17
     }
   },
   {
@@ -5689,7 +5690,7 @@
       "titl": 11,
       "imdb": 8,
       "movi": 8,
-      "davi": 7
+      "for": 8
     }
   },
   {
@@ -5709,11 +5710,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5754,
     "freq_words": {
+      "the": 17,
+      "and": 16,
       "imdb": 14,
       "user": 12,
-      "stevi": 10,
-      "movi": 10,
-      "ray": 9
+      "stevi": 10
     }
   },
   {
@@ -5733,11 +5734,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8604,
     "freq_words": {
+      "the": 25,
+      "more": 22,
       "rambo": 18,
-      "movi": 14,
-      "imdb": 14,
-      "user": 13,
-      "film": 12
+      "to": 18,
+      "of": 16
     }
   },
   {
@@ -5757,11 +5758,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4111,
     "freq_words": {
+      "the": 36,
       "night": 24,
-      "titl": 20,
-      "search": 17,
-      "opera": 14,
-      "tv": 10
+      "a": 22,
+      "at": 20,
+      "titl": 20
     }
   },
   {
@@ -5781,11 +5782,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3928,
     "freq_words": {
+      "the": 37,
+      "of": 30,
+      "and": 29,
       "rise": 28,
-      "fall": 28,
-      "search": 17,
-      "titl": 15,
-      "tv": 10
+      "fall": 28
     }
   },
   {
@@ -5805,11 +5806,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4092,
     "freq_words": {
+      "the": 36,
       "collect": 24,
       "titl": 17,
       "search": 17,
-      "edward": 8,
-      "murrow": 8
+      "v": 15
     }
   },
   {
@@ -5829,11 +5830,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6485,
     "freq_words": {
+      "the": 22,
       "movi": 15,
+      "more": 15,
       "imdb": 14,
-      "user": 12,
-      "rate": 10,
-      "detail": 9
+      "to": 13
     }
   },
   {
@@ -5853,11 +5854,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5590,
     "freq_words": {
+      "a": 28,
+      "the": 20,
       "imdb": 14,
-      "movi": 12,
-      "user": 12,
-      "rate": 9,
-      "lin": 8
+      "may": 13,
+      "movi": 12
     }
   },
   {
@@ -5877,11 +5878,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6856,
     "freq_words": {
+      "the": 27,
+      "a": 26,
       "movi": 21,
-      "imdb": 14,
-      "user": 12,
-      "rate": 9,
-      "dvd": 8
+      "and": 17,
+      "wa": 16
     }
   },
   {
@@ -5901,11 +5902,11 @@
     "pagerank": 0.8615965128687798,
     "size": 10591,
     "freq_words": {
-      "churchil": 28,
-      "winston": 15,
-      "imdb": 14,
-      "baldwin": 14,
-      "movi": 12
+      "the": 59,
+      "a": 33,
+      "to": 31,
+      "and": 30,
+      "in": 30
     }
   },
   {
@@ -5925,11 +5926,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6731,
     "freq_words": {
+      "the": 36,
+      "and": 22,
       "imdb": 14,
-      "user": 12,
-      "movi": 10,
-      "film": 10,
-      "plot": 9
+      "more": 14,
+      "is": 14
     }
   },
   {
@@ -5949,11 +5950,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5667,
     "freq_words": {
+      "the": 23,
+      "s": 14,
       "imdb": 14,
-      "tell": 12,
-      "via": 12,
-      "user": 12,
-      "rate": 11
+      "and": 14,
+      "a": 13
     }
   },
   {
@@ -5973,11 +5974,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7877,
     "freq_words": {
+      "the": 36,
+      "more": 23,
       "chappel": 19,
-      "episod": 16,
-      "imdb": 14,
-      "rate": 14,
-      "user": 14
+      "show": 17,
+      "episod": 16
     }
   },
   {
@@ -5997,11 +5998,11 @@
     "pagerank": 0.8615965128687798,
     "size": 2693,
     "freq_words": {
+      "the": 21,
       "search": 17,
       "titl": 11,
-      "imdb": 8,
-      "movi": 8,
-      "deepak": 7
+      "of": 9,
+      "imdb": 8
     }
   },
   {
@@ -6021,11 +6022,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3414,
     "freq_words": {
+      "the": 35,
+      "last": 27,
       "shot": 21,
       "search": 17,
-      "titl": 16,
-      "result": 9,
-      "imdb": 8
+      "titl": 16
     }
   },
   {
@@ -6045,11 +6046,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7801,
     "freq_words": {
-      "imdb": 15,
-      "movi": 14,
-      "user": 13,
-      "plot": 10,
-      "rate": 10
+      "the": 31,
+      "more": 19,
+      "a": 19,
+      "of": 17,
+      "imdb": 15
     }
   },
   {
@@ -6069,11 +6070,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7631,
     "freq_words": {
-      "movi": 15,
-      "imdb": 14,
-      "user": 13,
-      "buck": 12,
-      "detail": 9
+      "more": 22,
+      "and": 18,
+      "a": 16,
+      "the": 16,
+      "movi": 15
     }
   },
   {
@@ -6093,11 +6094,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6829,
     "freq_words": {
+      "the": 28,
+      "a": 19,
+      "more": 16,
       "pooh": 15,
-      "winni": 14,
-      "imdb": 14,
-      "movi": 12,
-      "user": 12
+      "winni": 14
     }
   },
   {
@@ -6117,11 +6118,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3691,
     "freq_words": {
+      "and": 22,
       "search": 17,
+      "the": 16,
       "titl": 15,
-      "maud": 10,
-      "micki": 9,
-      "movi": 9
+      "maud": 10
     }
   },
   {
@@ -6141,11 +6142,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5871,
     "freq_words": {
-      "imdb": 14,
-      "user": 12,
-      "film": 11,
-      "movi": 10,
-      "rate": 9
+      "the": 17,
+      "to": 17,
+      "a": 17,
+      "and": 16,
+      "imdb": 14
     }
   },
   {
@@ -6165,11 +6166,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7115,
     "freq_words": {
+      "the": 22,
+      "more": 21,
       "imdb": 14,
       "movi": 13,
-      "user": 13,
-      "disney": 12,
-      "rate": 10
+      "user": 13
     }
   },
   {
@@ -6193,7 +6194,7 @@
       "titl": 17,
       "search": 17,
       "planet": 12,
-      "movi": 9
+      "the": 12
     }
   },
   {
@@ -6237,11 +6238,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4072,
     "freq_words": {
+      "the": 44,
       "kid": 23,
       "search": 17,
       "lemon": 16,
-      "titl": 13,
-      "drop": 9
+      "titl": 13
     }
   },
   {
@@ -6261,11 +6262,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5484,
     "freq_words": {
+      "the": 15,
       "imdb": 14,
       "user": 12,
       "movi": 11,
-      "rate": 10,
-      "dvd": 8
+      "more": 11
     }
   },
   {
@@ -6285,11 +6286,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7114,
     "freq_words": {
+      "himself": 33,
+      "the": 24,
       "archiv": 16,
       "footag": 16,
-      "imdb": 14,
-      "user": 13,
-      "movi": 12
+      "imdb": 14
     }
   },
   {
@@ -6313,7 +6314,7 @@
       "titl": 11,
       "imdb": 8,
       "movi": 8,
-      "midsom": 7
+      "for": 8
     }
   },
   {
@@ -6333,11 +6334,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3566,
     "freq_words": {
+      "the": 34,
       "titl": 20,
       "search": 17,
       "bone": 11,
-      "setter": 9,
-      "aka": 9
+      "setter": 9
     }
   },
   {
@@ -6360,8 +6361,8 @@
       "vampir": 17,
       "movi": 16,
       "imdb": 14,
-      "user": 13,
-      "film": 11
+      "more": 13,
+      "user": 13
     }
   },
   {
@@ -6385,7 +6386,7 @@
       "titl": 11,
       "imdb": 8,
       "movi": 8,
-      "cartoon": 7
+      "for": 8
     }
   },
   {
@@ -6405,11 +6406,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6649,
     "freq_words": {
+      "the": 26,
+      "and": 19,
       "film": 16,
-      "imdb": 14,
-      "movi": 13,
-      "user": 12,
-      "rate": 10
+      "a": 16,
+      "imdb": 14
     }
   },
   {
@@ -6429,11 +6430,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7514,
     "freq_words": {
+      "a": 27,
+      "the": 25,
+      "more": 18,
       "movi": 17,
-      "imdb": 14,
-      "user": 13,
-      "spitfir": 9,
-      "rate": 9
+      "to": 17
     }
   },
   {
@@ -6455,9 +6456,9 @@
     "freq_words": {
       "imdb": 14,
       "user": 12,
-      "rate": 11,
-      "movi": 10,
-      "dvd": 8
+      "a": 12,
+      "the": 12,
+      "rate": 11
     }
   },
   {
@@ -6478,10 +6479,10 @@
     "size": 4386,
     "freq_words": {
       "imdb": 14,
+      "a": 13,
       "movi": 10,
       "user": 10,
-      "de": 9,
-      "rate": 9
+      "de": 9
     }
   },
   {
@@ -6525,11 +6526,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3114,
     "freq_words": {
+      "show": 25,
+      "the": 24,
       "search": 17,
       "carol": 16,
-      "burnett": 16,
-      "titl": 12,
-      "tv": 11
+      "burnett": 16
     }
   },
   {
@@ -6549,11 +6550,11 @@
     "pagerank": 0.8615965128687798,
     "size": 9304,
     "freq_words": {
+      "the": 27,
       "movi": 22,
-      "love": 15,
-      "imdb": 14,
-      "user": 13,
-      "rate": 10
+      "more": 22,
+      "s": 21,
+      "i": 21
     }
   },
   {
@@ -6573,11 +6574,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3892,
     "freq_words": {
+      "the": 62,
       "beauti": 29,
+      "and": 27,
       "titl": 17,
-      "search": 17,
-      "bad": 11,
-      "aka": 10
+      "search": 17
     }
   },
   {
@@ -6598,10 +6599,10 @@
     "size": 3663,
     "freq_words": {
       "barbarian": 22,
+      "the": 20,
       "search": 17,
       "titl": 16,
-      "aka": 12,
-      "queen": 11
+      "of": 12
     }
   },
   {
@@ -6621,11 +6622,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5579,
     "freq_words": {
+      "a": 19,
+      "more": 17,
       "imdb": 14,
-      "movi": 12,
-      "user": 12,
-      "don": 9,
-      "rate": 9
+      "and": 13,
+      "the": 13
     }
   },
   {
@@ -6645,11 +6646,11 @@
     "pagerank": 0.8615965128687798,
     "size": 4846,
     "freq_words": {
+      "the": 19,
       "imdb": 14,
       "user": 12,
-      "movi": 10,
-      "station": 9,
-      "rate": 9
+      "more": 11,
+      "movi": 10
     }
   },
   {
@@ -6669,11 +6670,11 @@
     "pagerank": 0.8615965128687798,
     "size": 2832,
     "freq_words": {
+      "the": 18,
       "search": 17,
+      "of": 13,
       "titl": 12,
-      "battl": 10,
-      "algier": 10,
-      "imdb": 8
+      "battl": 10
     }
   },
   {
@@ -6693,11 +6694,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3896,
     "freq_words": {
+      "the": 36,
       "hunter": 28,
       "titl": 19,
       "search": 17,
-      "deer": 12,
-      "aka": 9
+      "deer": 12
     }
   },
   {
@@ -6717,11 +6718,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6053,
     "freq_words": {
+      "the": 27,
+      "of": 22,
       "movi": 15,
       "imdb": 14,
-      "user": 13,
-      "rate": 10,
-      "west": 8
+      "user": 13
     }
   },
   {
@@ -6765,11 +6766,11 @@
     "pagerank": 0.8615965128687798,
     "size": 2866,
     "freq_words": {
+      "the": 17,
       "search": 17,
       "titl": 12,
-      "truth": 9,
-      "complet": 8,
-      "de": 8
+      "about": 10,
+      "truth": 9
     }
   },
   {
@@ -6813,11 +6814,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3837,
     "freq_words": {
+      "the": 34,
       "countdown": 27,
       "search": 17,
       "tv": 17,
-      "titl": 16,
-      "final": 11
+      "titl": 16
     }
   },
   {
@@ -6839,9 +6840,9 @@
     "freq_words": {
       "titl": 19,
       "search": 17,
+      "the": 14,
       "screamer": 13,
-      "aka": 12,
-      "movi": 9
+      "aka": 12
     }
   },
   {
@@ -6885,11 +6886,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7950,
     "freq_words": {
+      "the": 32,
+      "more": 21,
       "imdb": 14,
-      "user": 13,
-      "movi": 12,
-      "dvd": 10,
-      "film": 10
+      "a": 14,
+      "user": 13
     }
   },
   {
@@ -6911,9 +6912,9 @@
     "freq_words": {
       "footag": 26,
       "archiv": 25,
-      "lee": 14,
-      "imdb": 14,
-      "bruce": 13
+      "the": 18,
+      "more": 15,
+      "lee": 14
     }
   },
   {
@@ -6933,11 +6934,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5782,
     "freq_words": {
+      "herself": 16,
+      "himself": 16,
       "imdb": 14,
-      "user": 12,
-      "movi": 11,
-      "rate": 10,
-      "dvd": 8
+      "more": 13,
+      "user": 12
     }
   },
   {
@@ -6957,11 +6958,11 @@
     "pagerank": 0.8615965128687798,
     "size": 5651,
     "freq_words": {
+      "the": 18,
       "imdb": 14,
       "user": 13,
-      "movi": 11,
-      "rate": 9,
-      "dvd": 8
+      "and": 12,
+      "to": 12
     }
   },
   {
@@ -6981,11 +6982,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6997,
     "freq_words": {
+      "the": 23,
+      "to": 20,
+      "more": 16,
       "imdb": 14,
-      "irrit": 12,
-      "tv": 12,
-      "movi": 12,
-      "user": 12
+      "and": 14
     }
   },
   {
@@ -7005,11 +7006,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3705,
     "freq_words": {
+      "that": 29,
+      "show": 27,
+      "s": 19,
       "titl": 17,
-      "search": 17,
-      "70": 13,
-      "tv": 12,
-      "imdb": 8
+      "search": 17
     }
   },
   {
@@ -7030,10 +7031,10 @@
     "size": 6148,
     "freq_words": {
       "movi": 16,
+      "more": 16,
       "imdb": 14,
       "danc": 13,
-      "user": 13,
-      "dvd": 9
+      "user": 13
     }
   },
   {
@@ -7054,10 +7055,10 @@
     "size": 3888,
     "freq_words": {
       "imdb": 14,
+      "the": 11,
       "movi": 10,
       "user": 10,
-      "rate": 9,
-      "winsor": 8
+      "rate": 9
     }
   },
   {
@@ -7077,11 +7078,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6086,
     "freq_words": {
+      "the": 30,
+      "and": 17,
       "voic": 16,
       "movi": 15,
-      "imdb": 14,
-      "user": 13,
-      "fern": 11
+      "to": 15
     }
   },
   {
@@ -7102,10 +7103,10 @@
     "size": 7109,
     "freq_words": {
       "episod": 22,
+      "more": 18,
       "2003": 17,
       "bam": 16,
-      "imdb": 14,
-      "rate": 13
+      "and": 16
     }
   },
   {
@@ -7126,10 +7127,10 @@
     "size": 3271,
     "freq_words": {
       "stori": 28,
+      "a": 24,
       "search": 17,
       "titl": 14,
-      "fishi": 12,
-      "tv": 9
+      "fishi": 12
     }
   },
   {
@@ -7149,11 +7150,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7241,
     "freq_words": {
+      "the": 25,
+      "more": 19,
+      "in": 15,
       "movi": 14,
-      "imdb": 14,
-      "user": 13,
-      "silk": 12,
-      "wood": 12
+      "imdb": 14
     }
   },
   {
@@ -7173,11 +7174,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3937,
     "freq_words": {
+      "an": 24,
+      "by": 23,
       "angel": 22,
       "titl": 21,
-      "touch": 17,
-      "search": 17,
-      "aka": 11
+      "touch": 17
     }
   },
   {
@@ -7197,11 +7198,11 @@
     "pagerank": 0.8615965128687798,
     "size": 2716,
     "freq_words": {
+      "the": 21,
       "search": 17,
       "titl": 11,
-      "imdb": 8,
-      "movi": 8,
-      "abc": 7
+      "of": 9,
+      "imdb": 8
     }
   },
   {
@@ -7221,11 +7222,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8021,
     "freq_words": {
-      "movi": 15,
-      "imdb": 14,
-      "user": 13,
-      "rate": 11,
-      "offic": 9
+      "the": 31,
+      "a": 24,
+      "more": 20,
+      "all": 17,
+      "movi": 15
     }
   },
   {
@@ -7245,11 +7246,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3905,
     "freq_words": {
+      "the": 37,
       "beyond": 26,
       "search": 17,
       "titl": 15,
-      "aka": 10,
-      "tv": 9
+      "aka": 10
     }
   },
   {
@@ -7273,7 +7274,7 @@
       "titl": 18,
       "luci": 17,
       "search": 17,
-      "result": 9
+      "i": 16
     }
   },
   {
@@ -7297,7 +7298,7 @@
       "titl": 16,
       "adam": 15,
       "12": 13,
-      "2": 9
+      "for": 11
     }
   },
   {
@@ -7319,9 +7320,9 @@
     "freq_words": {
       "imdb": 14,
       "movi": 11,
-      "user": 9,
-      "rate": 9,
-      "dvd": 7
+      "more": 10,
+      "a": 10,
+      "the": 10
     }
   },
   {
@@ -7341,11 +7342,11 @@
     "pagerank": 0.8615965128687798,
     "size": 10796,
     "freq_words": {
-      "god": 20,
-      "ard": 20,
-      "movi": 15,
-      "imdb": 14,
-      "user": 13
+      "the": 51,
+      "a": 35,
+      "of": 33,
+      "and": 28,
+      "s": 24
     }
   },
   {
@@ -7367,9 +7368,9 @@
     "freq_words": {
       "search": 17,
       "titl": 11,
-      "imdb": 8,
-      "movi": 8,
-      "ash": 7
+      "a": 10,
+      "with": 8,
+      "imdb": 8
     }
   },
   {
@@ -7392,8 +7393,8 @@
       "movi": 17,
       "search": 17,
       "titl": 13,
-      "jonah": 9,
-      "veggi": 9
+      "a": 12,
+      "jonah": 9
     }
   },
   {
@@ -7413,11 +7414,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6972,
     "freq_words": {
+      "the": 39,
+      "of": 17,
+      "more": 15,
       "imdb": 14,
-      "user": 13,
-      "movi": 12,
-      "rate": 10,
-      "dvd": 8
+      "and": 14
     }
   },
   {
@@ -7437,11 +7438,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7467,
     "freq_words": {
+      "and": 29,
+      "more": 21,
+      "the": 17,
       "movi": 14,
-      "imdb": 14,
-      "user": 13,
-      "film": 12,
-      "rate": 10
+      "imdb": 14
     }
   },
   {
@@ -7461,11 +7462,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3521,
     "freq_words": {
+      "second": 31,
       "search": 17,
       "titl": 15,
-      "7": 8,
-      "imdb": 8,
-      "movi": 8
+      "to": 12,
+      "the": 11
     }
   },
   {
@@ -7485,11 +7486,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8366,
     "freq_words": {
-      "imdb": 14,
-      "movi": 13,
-      "film": 13,
-      "user": 13,
-      "rate": 12
+      "the": 29,
+      "more": 23,
+      "a": 22,
+      "and": 17,
+      "to": 16
     }
   },
   {
@@ -7509,11 +7510,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7025,
     "freq_words": {
-      "imdb": 14,
-      "movi": 13,
-      "user": 13,
-      "rate": 10,
-      "dvd": 9
+      "a": 25,
+      "to": 21,
+      "and": 17,
+      "more": 15,
+      "the": 15
     }
   },
   {
@@ -7533,11 +7534,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8773,
     "freq_words": {
-      "2": 14,
-      "imdb": 14,
-      "movi": 13,
-      "user": 13,
-      "rate": 12
+      "the": 46,
+      "more": 24,
+      "x": 19,
+      "of": 19,
+      "and": 18
     }
   },
   {
@@ -7557,11 +7558,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6802,
     "freq_words": {
+      "more": 20,
+      "the": 16,
       "imdb": 14,
       "user": 13,
-      "movi": 12,
-      "rate": 10,
-      "dvd": 8
+      "movi": 12
     }
   },
   {
@@ -7581,11 +7582,11 @@
     "pagerank": 0.8615965128687798,
     "size": 6495,
     "freq_words": {
+      "the": 28,
+      "and": 16,
+      "a": 16,
       "imdb": 14,
-      "movi": 12,
-      "user": 12,
-      "rate": 10,
-      "rubi": 9
+      "s": 13
     }
   },
   {
@@ -7605,11 +7606,11 @@
     "pagerank": 0.8615965128687798,
     "size": 8029,
     "freq_words": {
-      "movi": 16,
-      "imdb": 14,
-      "user": 13,
-      "dvd": 10,
-      "plot": 10
+      "the": 34,
+      "a": 19,
+      "and": 18,
+      "to": 18,
+      "movi": 16
     }
   },
   {
@@ -7630,10 +7631,10 @@
     "size": 4027,
     "freq_words": {
       "stranger": 36,
+      "a": 27,
+      "among": 19,
       "search": 18,
-      "titl": 17,
-      "home": 15,
-      "tv": 11
+      "titl": 17
     }
   },
   {
@@ -7653,11 +7654,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7979,
     "freq_words": {
+      "more": 24,
+      "the": 22,
+      "a": 16,
       "imdb": 14,
-      "user": 13,
-      "movi": 12,
-      "dvd": 9,
-      "detail": 9
+      "to": 14
     }
   },
   {
@@ -7677,11 +7678,11 @@
     "pagerank": 0.8615965128687798,
     "size": 3997,
     "freq_words": {
+      "the": 37,
+      "in": 27,
       "wild": 24,
       "search": 17,
-      "lost": 16,
-      "titl": 15,
-      "aka": 13
+      "lost": 16
     }
   },
   {
@@ -7701,11 +7702,11 @@
     "pagerank": 0.8615965128687798,
     "size": 7169,
     "freq_words": {
+      "the": 28,
+      "more": 20,
+      "a": 19,
       "imdb": 14,
-      "movi": 12,
-      "user": 12,
-      "herbi": 10,
-      "dvd": 9
+      "movi": 12
     }
   },
   {
@@ -7735,7 +7736,7 @@
       "bbc": 2,
       "fifth": 1,
       "nest": 1,
-      "rare": 1
+      "for": 1
     }
   },
   {
@@ -7763,7 +7764,7 @@
       "cnn": 2,
       "sauerkraut": 1,
       "capit": 1,
-      "sweet": 1
+      "is": 1
     }
   },
   {
@@ -7783,11 +7784,11 @@
     "pagerank": 2.5886441717463784,
     "size": 1859,
     "freq_words": {
-      "mathemat": 6,
-      "relev": 6,
-      "term": 6,
-      "system": 5,
-      "book": 3
+      "the": 15,
+      "of": 14,
+      "a": 12,
+      "and": 9,
+      "to": 7
     }
   },
   {
@@ -7807,11 +7808,11 @@
     "pagerank": 2.5886441717463784,
     "size": 1961,
     "freq_words": {
+      "of": 13,
+      "the": 13,
       "data": 11,
-      "base": 9,
-      "inform": 5,
-      "gener": 4,
-      "consid": 4
+      "and": 10,
+      "base": 9
     }
   },
   {
@@ -7831,11 +7832,11 @@
     "pagerank": 2.5886441717463784,
     "size": 1518,
     "freq_words": {
-      "retriev": 5,
-      "book": 3,
-      "inform": 3,
-      "descript": 3,
-      "1": 2
+      "of": 15,
+      "the": 12,
+      "is": 6,
+      "a": 6,
+      "to": 6
     }
   },
   {
@@ -7855,11 +7856,11 @@
     "pagerank": 3.461520146679522,
     "size": 3782,
     "freq_words": {
+      "of": 21,
+      "the": 17,
       "program": 16,
-      "comput": 13,
-      "scienc": 7,
-      "student": 7,
-      "studi": 7
+      "in": 14,
+      "comput": 13
     }
   },
   {
@@ -7879,11 +7880,11 @@
     "pagerank": 3.461520146679522,
     "size": 3024,
     "freq_words": {
+      "the": 23,
+      "of": 18,
+      "in": 12,
       "postgradu": 9,
-      "program": 8,
-      "admiss": 8,
-      "comput": 8,
-      "applic": 7
+      "a": 9
     }
   },
   {
@@ -7899,11 +7900,11 @@
     "pagerank": 4.733141904785907,
     "size": 3073,
     "freq_words": {
-      "west": 10,
-      "ham": 10,
-      "sheringham": 7,
-      "minut": 7,
-      "blackburn": 6
+      "the": 23,
+      "a": 21,
+      "to": 18,
+      "s": 13,
+      "in": 11
     }
   },
   {
@@ -7919,11 +7920,11 @@
     "pagerank": 4.733141904785907,
     "size": 1517,
     "freq_words": {
-      "nest": 6,
-      "kite": 5,
-      "bird": 4,
-      "success": 4,
-      "news": 3
+      "the": 15,
+      "in": 10,
+      "and": 9,
+      "of": 8,
+      "nest": 6
     }
   },
   {
@@ -7939,11 +7940,11 @@
     "pagerank": 4.733141904785907,
     "size": 1983,
     "freq_words": {
+      "the": 20,
+      "to": 16,
       "bt": 8,
-      "goonhilli": 6,
-      "site": 6,
-      "mp": 3,
-      "georg": 3
+      "it": 7,
+      "and": 7
     }
   },
   {
@@ -7959,11 +7960,11 @@
     "pagerank": 6.678266626405673,
     "size": 5712,
     "freq_words": {
-      "climat": 12,
-      "chang": 12,
-      "global": 11,
-      "report": 10,
-      "action": 9
+      "the": 57,
+      "to": 29,
+      "of": 23,
+      "and": 23,
+      "is": 14
     }
   },
   {
@@ -7979,11 +7980,11 @@
     "pagerank": 6.678266626405673,
     "size": 4211,
     "freq_words": {
-      "accordion": 13,
-      "wish": 7,
-      "ek": 7,
-      "student": 7,
-      "play": 7
+      "the": 29,
+      "in": 25,
+      "a": 18,
+      "and": 15,
+      "it": 15
     }
   }
 ]
