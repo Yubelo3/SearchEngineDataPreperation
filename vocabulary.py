@@ -10,7 +10,9 @@ class Vocabulary(object):
         return self.vocab[word]
 
     def dictionary(self):
+        assert "is" not in self.invert_vocab
         return self.vocab
 
     def invert_dictionary(self):
+        assert "is" not in self.invert_vocab
         return self.invert_vocab

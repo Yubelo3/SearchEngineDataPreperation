@@ -14,6 +14,7 @@ class Stemmer():
         with open(stopword_file, "r") as f:
             for word in f.readlines():
                 self.stopwords.add(word.strip())
+        assert "is" in self.stopwords
         for w in whitelist:
             wordlist_len = len(wordninja.DEFAULT_LANGUAGE_MODEL._wordcost)
             wordninja.DEFAULT_LANGUAGE_MODEL._wordcost[w] = math.log(
@@ -33,14 +34,15 @@ class Stemmer():
             if w not in self.stopwords:
                 stopword_removed_text.append(w)
                 stopword_removed_index.append(i)
-        splited_text = ' '.join(splited_text)
-        return splited_text, stopword_removed_index
+        stopword_removed_text = ' '.join(stopword_removed_text)
+        return stopword_removed_text, stopword_removed_index
 
     def remove_accents(self, text):
         normalized = unicodedata.normalize('NFKD', text)
         return ''.join(c for c in normalized if not unicodedata.combining(c) and ord(c) < 128)
 
     def stem(self, word: str):
+        stemmed_word=self.stemmer.stem(word)
         return self.stemmer.stem(word)
 
     def stem_and_map(self, content: str):
