@@ -13,7 +13,7 @@ PAGE_DIR = "page_data"
 
 
 def main():
-    # pages, page_to_id, connectivity_matrix = crawl_pages()
+    pages, page_to_id, connectivity_matrix = crawl_pages()
     forward_index, vocabulary = stemming()
     title_inverted_index, body_inverted_index = build_inverted_index()
 
@@ -50,6 +50,7 @@ def stemming():
         with open(filepath, "r", encoding="utf-8") as f:
             html_content = f.read()
         title, body = parser.extract_title_and_body_from_html_str(html_content)
+        pages[doc_id].title=title
         stemmed_title,stemmed_word_index_title = stemmer.stem_and_map(title)
         stemmed_body,stemmed_word_index_body = stemmer.stem_and_map(body)
         all_words=stemmed_title+stemmed_body
@@ -98,6 +99,7 @@ def build_inverted_index():
         page_id = page["id"]
         aggregate(page_id, page["title"],page["title_word_pos"], title_inverted_index)
         aggregate(page_id, page["body"],page["body_word_pos"], body_inverted_index)
+        
     title_inverted_index_path = os.path.join(
         PAGE_DIR, "title_inverted_index.json")
     body_inverted_index_path = os.path.join(

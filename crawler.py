@@ -33,6 +33,7 @@ class Crawler(object):
             page_key = (url, last_modified)
             page_id = num_crawled
             page_to_id[page_key] = num_crawled
+            
             pages.append(Page(
                 id=num_crawled,
                 title=title,
@@ -64,6 +65,8 @@ class Crawler(object):
                     pages[next_page_id].parents_id.append(page_id)
 
         # add pagerank value to page information
+        actual_pages=len(pages)
+        connectivity_matrix=connectivity_matrix[:actual_pages,:actual_pages]
         pagerank = PageRank(0.8).compute(connectivity_matrix)
         for page, pr in zip(pages, pagerank):
             page.pagerank = pr

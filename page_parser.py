@@ -34,7 +34,8 @@ class PageParser(object):
 
         last_modified = response.headers.get('Last-Modified')
         soup = BeautifulSoup(response.text, 'html.parser')
-        title = soup.title.string if soup.title else None
+        h1 = soup.find('h1')
+        title = soup.title.string if not h1 else h1.text
 
         # extract in-page links
         links = set()
@@ -58,7 +59,8 @@ class PageParser(object):
 
     def extract_title_and_body_from_html_str(self, content: str):
         soup = BeautifulSoup(content, "html.parser",from_encoding="utf-8")
-        title_text = soup.title.string
+        h1 = soup.find('h1')
+        title_text = soup.title.string if not h1 else h1.text
         for element in soup.body(["script", "style", "nav", "footer"]):
             element.decompose()
         body_text = soup.body.get_text(separator=" ", strip=True)
