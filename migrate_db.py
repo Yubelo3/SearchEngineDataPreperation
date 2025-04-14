@@ -117,6 +117,11 @@ def calculate_tfidf_vectors(index_data, total_docs, max_tf_dict):
 
     return doc_vectors
 
+def cal_mangitude(vector):
+    sum = 0
+    for v in vector.values():
+        sum += v**2
+    return round(math.sqrt(sum), 4)
 
 def main():
     id_to_term = load_dictionary("page_data/dictionary.json")
@@ -141,10 +146,14 @@ def main():
 
     tfidf_records = []
     for doc_id in title_tfidf.keys() | body_tfidf.keys():
+        title_vec = title_tfidf.get(doc_id, {})
+        body_vec = body_tfidf.get(doc_id, {})
         record = (
             doc_id,
-            Json(title_tfidf.get(doc_id, {})),
-            Json(body_tfidf.get(doc_id, {})),
+            Json(title_vec),
+            cal_mangitude(title_vec),
+            Json(body_vec),
+            cal_mangitude(body_vec)
         )
         tfidf_records.append(record)
 
@@ -232,8 +241,8 @@ def main():
         execute_batch(
             cursor,
             """INSERT INTO document_tfidf (
-                id, title_tfidf_vec, body_tfidf_vec
-            ) VALUES (%s, %s::jsonb, %s::jsonb)
+                id, title_tfidf_vec, title_mag, body_tfidf_vec, body_mag
+            ) VALUES (%s, %s::jsonb, %s, %s::jsonb, %s)
             ON CONFLICT (id) DO UPDATE SET
                 title_tfidf_vec = EXCLUDED.title_tfidf_vec,
                 body_tfidf_vec = EXCLUDED.body_tfidf_vec,
