@@ -56,6 +56,7 @@ def transform_metadata_data(
         metadata = json.load(f)
 
     transformed = []
+    max_page_rank = 0
     for doc in metadata:
         parent_links = [
             id_to_url_mapping[parent_id]
@@ -81,7 +82,9 @@ def transform_metadata_data(
                 doc["pagerank"],
             )
         )
-    return transformed
+        if doc["pagerank"] > max_page_rank:
+            max_page_rank = doc["pagerank"]
+    return transformed, max_page_rank
 
 
 def calculate_max_tf(index_data):
@@ -134,7 +137,7 @@ def main():
     with open("page_data/metadata.json") as f:
         metadata = json.load(f)
     id_to_url = {doc["id"]: doc["url"] for doc in metadata}
-    meta_data = transform_metadata_data(
+    meta_data, max_page_rank = transform_metadata_data(
         "page_data/metadata.json", id_to_url, max_title_tf_dict, max_body_tf_dict
     )
 
@@ -229,7 +232,7 @@ def main():
                     Json(m[7]),
                     m[8],
                     m[9],
-                    m[10],
+                    m[10] / max_page_rank,
                 )
                 for m in meta_data
             ],
