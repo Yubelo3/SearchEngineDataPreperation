@@ -49,6 +49,27 @@ def transform_index_data(index_file, term_mapping):
     return transformed
 
 
+def transform_index_data_with_tfidf(index_data, tfidf_vectors, magnitudes):
+    transformed = []
+    for entry in index_data:
+        term_id = entry[0]
+        term = entry[1]
+        documents = []
+        for doc in entry[2]:
+            doc_id = doc["id"]
+            pos = doc["pos"]
+            # 计算tfidfM = 该文档该term的tfidf / 文档向量模长
+            tfidf = tfidf_vectors.get(doc_id, {}).get(term_id, 0.0)
+            mag = magnitudes.get(doc_id, 0)
+            tfidfM = tfidf / mag if mag != 0 else 0.0
+            if tfidfM == 0:
+                print("error cal")
+            documents.append({"id": doc_id, "tfidfM": tfidfM, "pos": pos})
+
+        transformed.append((term_id, term, documents))
+    return transformed
+
+
 def transform_metadata_data(
     metadata_file, id_to_url_mapping, max_title_tf_dict, max_body_tf_dict
 ):
@@ -120,11 +141,13 @@ def calculate_tfidf_vectors(index_data, total_docs, max_tf_dict):
 
     return doc_vectors
 
+
 def cal_mangitude(vector):
     sum = 0
     for v in vector.values():
         sum += v**2
     return round(math.sqrt(sum), 4)
+
 
 def main():
     id_to_term = load_dictionary("page_data/dictionary.json")
@@ -147,6 +170,14 @@ def main():
 
     body_tfidf = calculate_tfidf_vectors(body_data, total_docs, max_body_tf_dict)
 
+    title_mags = {doc_id: cal_mangitude(vec) for doc_id, vec in title_tfidf.items()}
+    body_mags = {doc_id: cal_mangitude(vec) for doc_id, vec in body_tfidf.items()}
+
+    title_data_tfidf = transform_index_data_with_tfidf(
+        title_data, title_tfidf, title_mags
+    )
+    body_data_tfidf = transform_index_data_with_tfidf(body_data, body_tfidf, body_mags)
+
     tfidf_records = []
     for doc_id in title_tfidf.keys() | body_tfidf.keys():
         title_vec = title_tfidf.get(doc_id, {})
@@ -156,7 +187,7 @@ def main():
             Json(title_vec),
             cal_mangitude(title_vec),
             Json(body_vec),
-            cal_mangitude(body_vec)
+            cal_mangitude(body_vec),
         )
         tfidf_records.append(record)
 
@@ -170,8 +201,7 @@ def main():
             """TRUNCATE TABLE 
                 title_inverted_index, 
                 body_inverted_index, 
-                document_meta, 
-                document_tfidf 
+                document_meta
              CASCADE"""
         )
 
@@ -183,7 +213,7 @@ def main():
                ON CONFLICT (term) DO UPDATE SET
                    documents = EXCLUDED.documents,
                    updated_at = CURRENT_TIMESTAMP""",
-            [(id, term, Json(docs)) for id, term, docs in title_data],
+            [(id, term, Json(docs)) for id, term, docs in title_data_tfidf],
             page_size=100,
         )
         print("finished title_inverted_index migration\n")
@@ -196,7 +226,7 @@ def main():
                ON CONFLICT (term) DO UPDATE SET
                    documents = EXCLUDED.documents,
                    updated_at = CURRENT_TIMESTAMP""",
-            [(id, term, Json(docs)) for id, term, docs in body_data],
+            [(id, term, Json(docs)) for id, term, docs in body_data_tfidf],
             page_size=100,
         )
         print("finished body_inverted_index migration\n")
@@ -239,21 +269,6 @@ def main():
             page_size=100,
         )
         print("finished document_meta migration\n")
-
-        print("start document_tfidf migration\n")
-        execute_batch(
-            cursor,
-            """INSERT INTO document_tfidf (
-                id, title_tfidf_vec, title_mag, body_tfidf_vec, body_mag
-            ) VALUES (%s, %s::jsonb, %s, %s::jsonb, %s)
-            ON CONFLICT (id) DO UPDATE SET
-                title_tfidf_vec = EXCLUDED.title_tfidf_vec,
-                body_tfidf_vec = EXCLUDED.body_tfidf_vec,
-                updated_at = CURRENT_TIMESTAMP""",
-            tfidf_records,
-            page_size=100,
-        )
-        print("finished document_tfidf migration\n")
 
         conn.commit()
 
