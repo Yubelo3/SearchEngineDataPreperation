@@ -41,9 +41,7 @@ def transform_index_data(index_file, term_mapping):
             continue
         if len(entry["doc"]) <= 0:
             continue
-        documents = [
-            {"id": doc[0], "count": doc[1], "pos": doc[2]} for doc in entry["doc"]
-        ]
+        documents = [{"id": doc[0], "count": doc[1]} for doc in entry["doc"]]
 
         transformed.append((term_id, term_mapping[term_id], documents))
     return transformed
@@ -57,14 +55,12 @@ def transform_index_data_with_tfidf(index_data, tfidf_vectors, magnitudes):
         documents = []
         for doc in entry[2]:
             doc_id = doc["id"]
-            pos = doc["pos"]
-            # 计算tfidfM = 该文档该term的tfidf / 文档向量模长
             tfidf = tfidf_vectors.get(doc_id, {}).get(term_id, 0.0)
             mag = magnitudes.get(doc_id, 0)
             tfidfM = tfidf / mag if mag != 0 else 0.0
             if tfidfM == 0:
                 print("error cal")
-            documents.append({"id": doc_id, "tfidfM": tfidfM, "pos": pos})
+            documents.append({"id": doc_id, "tfidfM": tfidfM})
 
         transformed.append((term_id, term, documents))
     return transformed
@@ -208,12 +204,12 @@ def main():
         print("start title_inverted_index migration\n")
         execute_batch(
             cursor,
-            """INSERT INTO title_inverted_index (id, term, documents)
+            """INSERT INTO title_inverted_index (term, ngram, documents)
                VALUES (%s, %s, %s::jsonb)
                ON CONFLICT (term) DO UPDATE SET
                    documents = EXCLUDED.documents,
                    updated_at = CURRENT_TIMESTAMP""",
-            [(id, term, Json(docs)) for id, term, docs in title_data_tfidf],
+            [(term, 1, Json(docs)) for id, term, docs in title_data_tfidf],
             page_size=100,
         )
         print("finished title_inverted_index migration\n")
@@ -221,12 +217,12 @@ def main():
         print("start body_inverted_index migration\n")
         execute_batch(
             cursor,
-            """INSERT INTO body_inverted_index (id, term, documents)
+            """INSERT INTO body_inverted_index (term, ngram, documents)
                VALUES (%s, %s, %s::jsonb)
                ON CONFLICT (term) DO UPDATE SET
                    documents = EXCLUDED.documents,
                    updated_at = CURRENT_TIMESTAMP""",
-            [(id, term, Json(docs)) for id, term, docs in body_data_tfidf],
+            [(term, 1, Json(docs)) for id, term, docs in body_data_tfidf],
             page_size=100,
         )
         print("finished body_inverted_index migration\n")
