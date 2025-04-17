@@ -17,15 +17,15 @@ def load_dictionary(file_path, stopwords_file="stopwords.txt"):
     with open(file_path) as f:
         data = json.load(f)
 
-    try:
-        with open(stopwords_file, "r", encoding="utf-8") as f:
-            stopwords = set(line.strip() for line in f)
-    except FileNotFoundError:
-        raise ValueError(f"Stopwords file not found: {stopwords_file}")
+    # try:
+    #     with open(stopwords_file, "r", encoding="utf-8") as f:
+    #         stopwords = set(line.strip() for line in f)
+    # except FileNotFoundError:
+    #     raise ValueError(f"Stopwords file not found: {stopwords_file}")
 
-    filtered_dict = {k: v for k, v in data.items() if k not in stopwords}
+    # filtered_dict = {k: v for k, v in data.items() if k not in stopwords}
 
-    reverse_dict = {v: k for k, v in filtered_dict.items()}
+    reverse_dict = {v: k for k, v in data.items()}
 
     return reverse_dict
 
@@ -52,7 +52,7 @@ def transform_index_data_with_tfidf(index_data, tfidf_vectors, magnitudes):
     for entry in index_data:
         term_id = entry[0]
         term = entry[1]
-        documents = []
+        documents = {}
         for doc in entry[2]:
             doc_id = doc["id"]
             tfidf = tfidf_vectors.get(doc_id, {}).get(term_id, 0.0)
@@ -60,10 +60,98 @@ def transform_index_data_with_tfidf(index_data, tfidf_vectors, magnitudes):
             tfidfM = tfidf / mag if mag != 0 else 0.0
             if tfidfM == 0:
                 print("error cal")
-            documents.append({"id": doc_id, "tfidfM": tfidfM})
+            documents[doc_id] = tfidfM
 
         transformed.append((term_id, term, documents))
     return transformed
+
+
+def extract_continuous_sequences(positions, terms):
+    pairs = sorted(zip(positions, terms), key=lambda x: x[0])
+    sequences = []
+    current_seq = []
+    prev_pos = None
+
+    for pos, term in pairs:
+        if prev_pos is None or pos == prev_pos + 1:
+            current_seq.append(term)
+        else:
+            if len(current_seq) >= 1:
+                sequences.append(current_seq)
+            current_seq = [term]
+        prev_pos = pos
+
+    if current_seq:
+        sequences.append(current_seq)
+    return sequences
+
+
+def transform_n_gram_data(forward_index_file_path, term_mapping, n):
+    title_ngrams = defaultdict(lambda: defaultdict(int))
+    body_ngrams = defaultdict(lambda: defaultdict(int))
+
+    with open(forward_index_file_path, "r") as f:
+        forward_index = json.load(f)
+
+    for doc in forward_index:
+        doc_id = doc["id"]
+
+        title_terms = [term_mapping[tid] for tid in doc["title"]]
+        title_sequences = extract_continuous_sequences(
+            doc["title_word_pos"], title_terms
+        )
+
+        body_terms = [term_mapping[tid] for tid in doc["body"]]
+        body_sequences = extract_continuous_sequences(doc["body_word_pos"], body_terms)
+
+        def process_section(sequences, storage):
+            for seq in sequences:
+                seq_length = len(seq)
+                for m in range(2, n + 1):
+                    if seq_length < m:
+                        continue
+                    for i in range(seq_length - m + 1):
+                        ngram = " ".join(seq[i : i + m])
+                        storage[(ngram, m)][doc_id] += 1
+
+        process_section(title_sequences, title_ngrams)
+        process_section(body_sequences, body_ngrams)
+
+    title_output = [
+        (term, n_gram, dict(docs)) for (term, n_gram), docs in title_ngrams.items()
+    ]
+
+    body_output = [
+        (term, n_gram, dict(docs)) for (term, n_gram), docs in body_ngrams.items()
+    ]
+
+    return title_output, body_output
+
+
+def transform_n_gram_data_with_tfidf(
+    n_gram_data, total_document_count, max_tf_dict, doc_mag_dict
+):
+    n_gram_tfidf = []
+
+    for entry in n_gram_data:
+        term, n, docs = entry
+        df = len(docs)
+
+        tfidf_docs = {}
+        for doc_id, count in docs.items():
+            max_tf = max_tf_dict.get(doc_id, 1)
+            tf = count / max_tf
+
+            idf = math.log((total_document_count + 1) / (df + 1))
+
+            doc_magnitude = doc_mag_dict.get(doc_id, 1)
+            tfidf = (tf * idf) / doc_magnitude
+
+            tfidf_docs[doc_id] = tfidf
+
+        n_gram_tfidf.append((term, n, tfidf_docs))
+
+    return n_gram_tfidf
 
 
 def transform_metadata_data(
@@ -174,18 +262,15 @@ def main():
     )
     body_data_tfidf = transform_index_data_with_tfidf(body_data, body_tfidf, body_mags)
 
-    tfidf_records = []
-    for doc_id in title_tfidf.keys() | body_tfidf.keys():
-        title_vec = title_tfidf.get(doc_id, {})
-        body_vec = body_tfidf.get(doc_id, {})
-        record = (
-            doc_id,
-            Json(title_vec),
-            cal_mangitude(title_vec),
-            Json(body_vec),
-            cal_mangitude(body_vec),
-        )
-        tfidf_records.append(record)
+    title_n_gram_data, body_n_gram_data = transform_n_gram_data(
+        "page_data/forward_index.json", id_to_term, 4
+    )
+    title_n_gram_tfidf = transform_n_gram_data_with_tfidf(
+        title_n_gram_data, total_docs, max_title_tf_dict, title_mags
+    )
+    body_n_gram_tfidf = transform_n_gram_data_with_tfidf(
+        body_n_gram_data, total_docs, max_body_tf_dict, body_mags
+    )
 
     conn = psycopg2.connect(**DB_CONFIG)
     cursor = conn.cursor()
@@ -223,6 +308,32 @@ def main():
                    documents = EXCLUDED.documents,
                    updated_at = CURRENT_TIMESTAMP""",
             [(term, 1, Json(docs)) for id, term, docs in body_data_tfidf],
+            page_size=100,
+        )
+        print("finished body_inverted_index migration\n")
+
+        print("start title_n_gram_inverted_index migration\n")
+        execute_batch(
+            cursor,
+            """INSERT INTO title_inverted_index (term, ngram, documents)
+               VALUES (%s, %s, %s::jsonb)
+               ON CONFLICT (term) DO UPDATE SET
+                   documents = EXCLUDED.documents,
+                   updated_at = CURRENT_TIMESTAMP""",
+            [(term, n, Json(docs)) for term, n, docs in title_n_gram_tfidf],
+            page_size=100,
+        )
+        print("finished title_n_gram_inverted_index migration\n")
+
+        print("start body_n_gram_inverted_index migration\n")
+        execute_batch(
+            cursor,
+            """INSERT INTO body_inverted_index (term, ngram, documents)
+               VALUES (%s, %s, %s::jsonb)
+               ON CONFLICT (term) DO UPDATE SET
+                   documents = EXCLUDED.documents,
+                   updated_at = CURRENT_TIMESTAMP""",
+            [(term, n, Json(docs)) for term, n, docs in body_n_gram_tfidf],
             page_size=100,
         )
         print("finished body_inverted_index migration\n")
