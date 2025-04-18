@@ -1,1 +1,6 @@
 psycopg2-binary
+tqdm
+requests
+bs4
+snowballstemmer
+wordninja
