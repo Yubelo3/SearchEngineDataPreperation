@@ -13,7 +13,7 @@ PAGE_DIR = "page_data"
 
 
 def main():
-    pages, page_to_id, connectivity_matrix = crawl_pages()
+    # pages, page_to_id, connectivity_matrix = crawl_pages()
     forward_index, vocabulary = stemming()
     title_inverted_index, body_inverted_index = build_inverted_index()
 

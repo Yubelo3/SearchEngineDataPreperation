@@ -11,6 +11,7 @@ class Stemmer:
         self.stemmer = EnglishStemmer()
         self.vocab = Vocabulary()
         self.stopwords = set()
+        self.punctionation_token=" 990990990 "
         with open(stopword_file, "r") as f:
             for word in f.readlines():
                 self.stopwords.add(word.strip())
@@ -21,11 +22,19 @@ class Stemmer:
                 wordlist_len * math.log(wordlist_len)
             )
 
+    def replace_punctuation_and_non_alpha(self,text):
+        punctuations = r'[!"#$%&\'()*+,./:;<=>?@\[\\\]^_`{|}~]'
+        step1 = re.sub(punctuations, self.punctionation_token, text)
+        non_alpha_pattern = rf'([^a-zA-Z{re.escape(self.punctionation_token)}\s]|(?<!\w){re.escape(self.punctionation_token)}(?!\w))'
+        step2 = re.sub(non_alpha_pattern, ' ', step1)
+        result = re.sub(r'\s+', ' ', step2).strip()
+        return result
+    
     def clean_text(self, text: str) -> str:
-        text = self.remove_accents(text)  # remove accent
+        text = self.remove_accents(text).lower()  # remove accent
         # remove unrecognized character
-        cleaned_text = re.sub(r"[^\w\s]", " ", text)
-        cleaned_text = [w.lower() for w in cleaned_text.split() if w.isalnum()]
+        cleaned_text=self.replace_punctuation_and_non_alpha(text)
+        cleaned_text = [w for w in cleaned_text.split() if w.isalnum()]
         splited_text = []
         for w in cleaned_text:
             splited_text += wordninja.split(w)  # handle bad concatenation
@@ -56,8 +65,16 @@ class Stemmer:
         return self.vocab
 
 
+
+
 if __name__ == "__main__":
     stemmer = Stemmer("stopwords.txt")
     print(stemmer.stem("changing"))
     print(stemmer.stem("quickly"))
     print(stemmer.stem("news"))
+
+    s=stemmer.clean_text("this is a test, I want to replace, punctuation with special token! test on human-readable strings... try to make it feasible? ")
+    print(s)
+
+
+
