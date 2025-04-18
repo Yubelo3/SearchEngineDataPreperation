@@ -1,4 +1,4 @@
-from snowballstemmer import PorterStemmer
+from snowballstemmer import EnglishStemmer
 from vocabulary import Vocabulary
 import re
 import wordninja
@@ -8,7 +8,7 @@ import unicodedata
 
 class Stemmer:
     def __init__(self, stopword_file: str, whitelist=["crawler"]) -> None:
-        self.stemmer = PorterStemmer()
+        self.stemmer = EnglishStemmer()
         self.vocab = Vocabulary()
         self.stopwords = set()
         with open(stopword_file, "r") as f:
