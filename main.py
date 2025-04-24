@@ -13,18 +13,18 @@ PAGE_DIR = "page_data"
 
 
 def main():
-    # pages, page_to_id, connectivity_matrix = crawl_pages()
+    pages, page_to_id, connectivity_matrix = crawl_pages(num_workers=50)
     forward_index, vocabulary = stemming()
     title_inverted_index, body_inverted_index = build_inverted_index()
 
 
-def crawl_pages():
+def crawl_pages(num_workers:int):
     '''
     crawl pages and save to `$PAGE_DIR/original_pages/$doc_id.html`
     also save the metadata `$PAGE_DIR/metadata.json`
     '''
-    crawler = Crawler()
-    return crawler.crawl_and_pagerank(INITIAL_URL, dump_dir=PAGE_DIR)
+    crawler = Crawler(INITIAL_URL,300,PAGE_DIR)
+    return crawler.crawl_and_pagerank(num_workers=num_workers)
 
 
 def stemming():

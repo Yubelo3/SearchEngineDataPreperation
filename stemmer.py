@@ -80,18 +80,20 @@ if __name__ == "__main__":
     # print(stemmer.stem("quickly"))
     # print(stemmer.stem("news"))
 
-    s=stemmer.clean_text("human-readable this is a test, I want to replace, punctuation with special token! test on human-readable strings... try to make it feasible? ")
-    print(s)
-    s1=stemmer.clean_text("human-readable")  # should be [0,1]
-    print(s1)
-    s2=stemmer.clean_text("human- readable")  # should be [0,2]
-    print(s2)
-    s3=stemmer.clean_text("human - readable")  # should be [0,2]
-    print(s3)
-    s4=stemmer.clean_text("human 123-readable")
-    print(s4)
-    s5=stemmer.clean_text("is- 123-456 is-")  # is占一位，非连词-占一位
-    print(s5)
+    print(wordninja.split("2004"))
+
+    # s=stemmer.clean_text("human-readable this is a test, I want to replace, punctuation with special token! test on human-readable strings... try to make it feasible? ")
+    # print(s)
+    # s1=stemmer.clean_text("human-readable")  # should be [0,1]
+    # print(s1)
+    # s2=stemmer.clean_text("human- readable")  # should be [0,2]
+    # print(s2)
+    # s3=stemmer.clean_text("human - readable")  # should be [0,2]
+    # print(s3)
+    # s4=stemmer.clean_text("human 123-readable")
+    # print(s4)
+    # s5=stemmer.clean_text("is- 123-456 is-")  # is占一位，非连词-占一位
+    # print(s5)
 
 
 
