@@ -1,9 +1,17 @@
 # Data Preperation
 
-* word到word_id的映射放在page_data/dictionary.json  
-* page_url到page_id以及其他页面相关信息的映射放在page_data/metadata.json  
-* page_id到这个页面包含的word对应的word_id的映射放在page_data/forward_index.json  
-* word_id到包含这个单词的page对应的page_id的映射放在page_data/title_inverted_index.json和page_data/body_inverted_index.json
+## Requirements
+The crawled data has already store in `page_data`. If you'd like to run it by yourself,  
+```bash
+conda env create -f requirements.yml
+conda activate crawler
+python main.py
+```
+If you don't want to create conda environment,  
+```bash
+pip install -r requirements.txt
+python main.py
+```
 
 ## What does this project do  
 * Crawl pages starts from `"https://www.cse.ust.hk/~kwtleung/COMP4321/testpage.htm"`  

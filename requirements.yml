@@ -1,0 +1,13 @@
+name: crawler
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - beautifulsoup4=4.13.3=pyha770c72_0
+  - numpy=2.2.4=py311h5d046bc_0
+  - python=3.11.11=h9e4cc4f_2_cpython
+  - snowballstemmer=2.2.0=pyhd8ed1ab_0
+  - tqdm=4.67.1=pyhd8ed1ab_1
+  - wordninja=2.0.0=pyhd8ed1ab_0
+  - pip:
+      - psycopg2-binary==2.9.10

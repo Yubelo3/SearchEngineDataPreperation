@@ -79,8 +79,8 @@ if __name__ == "__main__":
     # print(stemmer.stem("changing"))
     # print(stemmer.stem("quickly"))
     # print(stemmer.stem("news"))
-
-    print(wordninja.split("2004"))
+    print(stemmer.stem("see"))
+    # print(wordninja.split("ratingsrecommendationsmessage"))
 
     # s=stemmer.clean_text("human-readable this is a test, I want to replace, punctuation with special token! test on human-readable strings... try to make it feasible? ")
     # print(s)
